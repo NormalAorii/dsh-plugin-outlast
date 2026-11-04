@@ -1,0 +1,946 @@
+{
+  "updatedAt": "2026-10-29",
+  "categories": [
+    {
+      "id": "consumables",
+      "nameZh": "消耗品",
+      "items": [
+        {
+          "id": "bottle",
+          "nameEn": "Bottle",
+          "nameZh": "瓶子",
+          "aliases": ["酒瓶", "玻璃瓶", "投掷瓶"],
+          "use": "扔出去砸怪、砸陷阱、或者单纯制造噪音把敌人引到别处。伤害很低，主要是「声音道具」。",
+          "howToGet": "地图上随处可捡，架子上、地上、垃圾堆里都有，是最不值钱的消耗品。",
+          "tips": [
+            "碎掉的玻璃声特别大，引怪效果远大于伤害，别指望它打死人",
+            "砸门内的陷阱、砸电场地板的电源面板都很好用",
+            "被原地杂兵挡路时扔一个，他会自己走去最近的投放点离开",
+            "蹲着砸地比砸墙更好控制落点，引怪方向更准"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html", "https://gl.ali213.net/html/2026-10/1816511.html"]
+        },
+        {
+          "id": "brick",
+          "nameEn": "Brick",
+          "nameZh": "砖块",
+          "aliases": ["板砖", "砖头"],
+          "use": "近战投掷物里的万能工具：砸怪、清陷阱、救队友脱身全靠它，而且完全无声。",
+          "howToGet": "地图角落、废墟、施工现场常见，一次可捡多块。",
+          "tips": [
+            "一块砖能用 3 次，比瓶子耐久高得多，别随手丢掉",
+            "完全无声，是「不想引怪但必须处理东西」的首选",
+            "配「强力手臂」强化剂可以直接把砸中的小怪砸倒",
+            "注意：砸中被眩晕的敌人会让眩晕提前结束，别在控场时手贱"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html", "https://gl.ali213.net/html/2026-10/1816433.html"]
+        },
+        {
+          "id": "small-med",
+          "nameEn": "Small Medicine",
+          "nameZh": "小型药物",
+          "aliases": ["小药", "小医疗", "绷带药"],
+          "use": "立刻回复 1 格血。",
+          "howToGet": "医疗箱产出，也可在地图散落拾取。",
+          "tips": [
+            "回 1 格看似不多，但出血/毒伤时是刚需",
+            "血量上限靠「血量增强剂」能提到 5 格，格子越多小药越划算",
+            "实战里别满血就嗑，留到被追之前补满更安全"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "large-med",
+          "nameEn": "Large Medicine",
+          "nameZh": "大型药物",
+          "aliases": ["大药", "大医疗", "医疗包"],
+          "use": "直接回满全部血量。",
+          "howToGet": "医疗箱产出，刷新率比小药低。",
+          "tips": [
+            "优先留给被 Boss 抓过一轮的队友，收益最大",
+            "自己血上限高的时候用大药最赚",
+            "多人局里报一声「我有大药」，方便队友决定谁去救人"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "antidote",
+          "nameEn": "Antidote",
+          "nameZh": "解药",
+          "aliases": ["解毒剂", "血清", "理智药"],
+          "use": "回满全部理智值(san)，解除精神错乱。",
+          "howToGet": "医疗箱产出，地图散落。",
+          "tips": [
+            "专门对付致幻者(Pusher)的毒气和双胞胎的毒瓶",
+            "理智掉光会进入精神错乱，画面扭曲+操作受影响，宁可提前嗑",
+            "治疗装具点出解毒(Detox)升级后可以少带解药"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html", "https://gl.ali213.net/html/2026-10/1816511_6.html"]
+        },
+        {
+          "id": "adrenaline",
+          "nameEn": "Adrenaline",
+          "nameZh": "肾上腺素",
+          "aliases": ["兴奋剂", "体力针", "体力药"],
+          "use": "立刻回满体力，并在一段时间内体力不消耗，等于短时间无限冲刺。",
+          "howToGet": "地图散落拾取。",
+          "tips": [
+            "中文资料原文把名称用 *** 屏蔽了，「肾上腺素」是玩家通称，实际名以游戏内为准",
+            "被 Boss 追、要横穿整张图时用，收益最高",
+            "留着开锁/搬重物/长距离跑图，别在小怪身上浪费",
+            "和「持久耐力」「快速逃跑」类强化叠加效果更明显"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "small-battery",
+          "nameEn": "Small Battery",
+          "nameZh": "小型电池",
+          "aliases": ["小电池", "电池"],
+          "use": "回复一部分夜视仪电量。",
+          "howToGet": "工具箱产出，地图散落。",
+          "tips": [
+            "夜视仪是纯黑区域的唯一视野来源，没电基本等于瞎",
+            "暗夜猎手出没的图里，电池优先级高于药",
+            "X 射线装具升级后也能顺手补电池，可省出格子"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html", "https://gl.ali213.net/html/2026-10/1816433.html"]
+        },
+        {
+          "id": "large-battery",
+          "nameEn": "Large Battery",
+          "nameZh": "大型电池",
+          "aliases": ["大电池", "满电电池"],
+          "use": "直接把夜视仪电量回满。",
+          "howToGet": "工具箱产出，刷新率低于小电池。",
+          "tips": [
+            "长图/纯黑关卡开局先去工具箱摸一块",
+            "电量增强器能把电池容量一起抬高，先拿增强再补电更划算",
+            "别在黑区边缘用完，留一点余量找下一个箱子"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "rig-charger",
+          "nameEn": "Rig Charger",
+          "nameZh": "技能装置充能器",
+          "aliases": ["装具充能", "充能器", "Rig 电池"],
+          "use": "立即恢复装具(Rig)的冷却，让你马上能再放一次技能。",
+          "howToGet": "工具箱产出，地图散落。",
+          "tips": [
+            "装具有独立冷却，关键时刻差一次就是生与死",
+            "救人、过 Boss 门前先充一次，别等进房间再找",
+            "主打控制(眩晕/致盲)的玩家优先级最高"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html", "https://gl.ali213.net/html/2026-10/1816433.html"]
+        },
+        {
+          "id": "syringe",
+          "nameEn": "Syringe",
+          "nameZh": "注射器",
+          "aliases": ["复活针", "救人针", "针筒"],
+          "use": "把已经死亡的队友直接救活，是唯一的复活手段。",
+          "howToGet": "位置固定，通常挂在墙上白色盒子里，打碎玻璃取出。",
+          "tips": [
+            "新手别乱拿：位置是固定的，队友死了会去固定点找，你拿走了会耽误事",
+            "开局记一下本图注射器在哪，比带满药更有用",
+            "救人有施法时间，先把周围清干净再打针",
+            "强化剂「双倍剂量」能让同一支注射器用两次"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html", "https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "health-booster",
+          "nameEn": "Health Booster",
+          "nameZh": "血量增强剂",
+          "aliases": ["加血上限", "红针", "血量强化"],
+          "use": "把血量补满并永久提升生命上限，最高到 5 格。",
+          "howToGet": "密室、部分补给点固定刷新。",
+          "tips": [
+            "看到就先拿，属于本局最强收益，越早拿后面越轻松",
+            "血量上限决定你能吃几次 Boss 攻击，是硬通货",
+            "拿了之后再去打 Boss，顺序别搞反"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "battery-booster",
+          "nameEn": "Battery Booster",
+          "nameZh": "电池增强器",
+          "aliases": ["电池扩容", "电量上限"],
+          "use": "补满电量并永久增加夜视仪电池容量。",
+          "howToGet": "密室、部分补给点刷新。",
+          "tips": [
+            "纯黑图必备，续航直接翻倍",
+            "和「电池寿命延长」处方叠加，一张图基本不用再找电池",
+            "想冲 A+ 的速通玩家优先拿这个而不是药"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "stamina-booster",
+          "nameEn": "Stamina Booster",
+          "nameZh": "体力增强剂",
+          "aliases": ["体力上限", "耐力强化", "蓝针"],
+          "use": "补满体力并永久提高体力上限。",
+          "howToGet": "密室、部分补给点刷新。",
+          "tips": [
+            "体力就是命，追逃全靠它，优先级仅次于血量增强",
+            "和「持久耐力」「运动健将」处方一起点，能一路不停跑",
+            "前期别乱用体力，留着给 Boss 追逐段"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "poster",
+          "nameEn": "Poster",
+          "nameZh": "海报",
+          "aliases": ["收集海报", "墙上海报"],
+          "use": "收集品，提高任务最终评分；单次任务收集 5 张（单人 3 张）可以显著抬分。",
+          "howToGet": "随机贴在墙上，需要在任务里主动找。",
+          "tips": [
+            "想冲 A+ 必须收集，评分直接卡在这里",
+            "海报通常贴在走廊尽头、房间侧墙，贴墙走不容易漏",
+            "多人局里分头找效率最高，找到在语音报位置",
+            "X 射线装具升级后能直接显示海报位置，省很多时间"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html", "https://gl.ali213.net/html/2026-10/1816433.html"]
+        },
+        {
+          "id": "lockpick",
+          "nameEn": "Lockpick",
+          "nameZh": "开锁器",
+          "aliases": ["撬锁器", "开锁工具"],
+          "use": "打开上锁的医疗箱与工具箱，不用再找钥匙。",
+          "howToGet": "医疗箱产出，地图散落。",
+          "tips": [
+            "中文资料原文名称被 *** 屏蔽，「开锁器」是玩家通称",
+            "优先开工具箱（电池+充能器），除非队伍缺血",
+            "多人局报一声「我去开锁」，避免两人同时浪费"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html"]
+        }
+      ]
+    },
+    {
+      "id": "rigs",
+      "nameZh": "装备(Rigs)",
+      "items": [
+        {
+          "id": "stun-rig",
+          "nameEn": "Stun Rig",
+          "nameZh": "眩晕装具",
+          "aliases": ["晕眩", "手雷装具", "Stun"],
+          "use": "投掷手雷，把范围内的敌人打进眩晕状态，是最通用的过路/救人手段。",
+          "howToGet": "睡眠室一楼右侧找工程师 Cornelius Knox 用代币学习，每个装具 2 个代币。",
+          "tips": [
+            "按住右键再按左键投掷；键鼠可以直接按 X 丢出去",
+            "升级方向：扩大半径 → 拆除地雷与陷阱 → 爆炸范围内玩家回电池和体力",
+            "往自己脚下扔一颗再跑，是最稳的脱身法",
+            "砖头砸中被眩晕的敌人会提前解除眩晕，控住之后别再补砖"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816433.html", "https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "blind-rig",
+          "nameEn": "Blind Rig",
+          "nameZh": "致盲装具",
+          "aliases": ["致盲", "烟雾地雷", "Blind"],
+          "use": "在地上放一颗致盲地雷，触发后爆出烟雾，让范围内的敌人短暂失明。",
+          "howToGet": "睡眠室工程师处用代币学习。",
+          "tips": [
+            "右键放置，踩到的敌人会被致盲，适合提前铺在必经通道",
+            "升级方向：扩大半径 → 缩短布置时间 → 自动重新激活 → 穿过烟雾获得肾上腺素效果",
+            "烟雾同时能断视线，甩 Boss 时往身后丢一颗很有效",
+            "对夜视仪敌人效果尤其好"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816433.html", "https://gl.ali213.net/html/2023-6/1074735.html"]
+        },
+        {
+          "id": "heal-rig",
+          "nameEn": "Heal Rig",
+          "nameZh": "治疗装具",
+          "aliases": ["治疗", "奶妈装具", "Heal"],
+          "use": "放出治疗气体，给自己和队友回血，是多人局的核心辅助装具。",
+          "howToGet": "睡眠室工程师处用代币学习。",
+          "tips": [
+            "右键释放，范围性治疗，队友站进来就吃",
+            "升级方向：扩大半径 → 无声释放 → 延长时间 → 解毒(Detox) → 减速范围内敌人",
+            "点出 Detox 之后基本不用再带解药，双胞胎关卡神器",
+            "救人前先铺治疗再进去，能顶住一轮伤害"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816433.html"]
+        },
+        {
+          "id": "xray-rig",
+          "nameEn": "X-Ray Rig",
+          "nameZh": "X 射线装具",
+          "aliases": ["X射线", "透视", "X-Ray"],
+          "use": "透视墙体标记敌人位置，是信息类装具，专门用来避免撞脸。",
+          "howToGet": "睡眠室工程师处用代币学习。",
+          "tips": [
+            "升级方向：共享情报给队友 → 显示消耗品 → 显示文件与海报 → 延长时间 → 补电池",
+            "能识破「人体模型」Boss 的真身（骨骼完整，假人缺一块骨头）",
+            "升级后会形成电磁场，防止周围陷阱激活，适合跑路，但不能拆陷阱",
+            "找海报冲 A+ 时非常好用"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816433.html", "https://gl.ali213.net/html/2026-10/1816137.html"]
+        },
+        {
+          "id": "barricade-rig",
+          "nameEn": "Barricade Rig",
+          "nameZh": "路障装具",
+          "aliases": ["路障", "封门", "Barricade"],
+          "use": "在门口布置路障，把追你的敌人挡在门外，换时间救人或者跑路。",
+          "howToGet": "睡眠室工程师处用代币学习。",
+          "tips": [
+            "专门对付会破门的 Boss，尤其霰弹枪男(Franco)",
+            "大型杂兵撞门更快，路障对他的收益最低",
+            "布置要提前，被追到门口才放通常来不及",
+            "配合关门使用：先关再封，能把敌人卡很久"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816433.html", "https://rutab.net/games/the-outlast-trials/guides/prohozhdenie.html"]
+        },
+        {
+          "id": "jammer-rig",
+          "nameEn": "Jammer Rig",
+          "nameZh": "干扰器装具",
+          "aliases": ["干扰器", "黑客装具", "Jammer"],
+          "use": "让电子陷阱和警报装置失效，是陷阱图的解药，也能用来识破伪装敌人。",
+          "howToGet": "睡眠室工程师处用代币学习。",
+          "tips": [
+            "长按右键黑入：陷阱红光变绿光、滴滴声变规律声、并出现图标",
+            "未升级时是直接引爆陷阱；升级「重设」后陷阱只对敌人生效（但爆炸 AOE 仍会伤到你）",
+            "对警报门有效，能让它不报警、不刷新小怪",
+            "可以识别「人体模型」Boss 里的真身"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816433.html", "https://gl.ali213.net/html/2026-10/1816137.html"]
+        }
+      ]
+    },
+    {
+      "id": "amps",
+      "nameZh": "处方/永久升级(Amps & Prescriptions)",
+      "items": [
+        {
+          "id": "amp-silent-steps",
+          "nameEn": "",
+          "nameZh": "悄无声息",
+          "aliases": ["静步", "踩玻璃无声"],
+          "use": "踩碎玻璃、踩到杂物不再发出声音。",
+          "howToGet": "睡眠室二楼厨房找「暗影夫人」Doris，用代币购买强化剂(Amps)，每个 3 个代币。",
+          "tips": [
+            "工具类强化，每类只能带 1 个，总共带 3 个",
+            "10 级解锁工具类第一行 3 项，之后每 15 级解锁下一行，50 级全解锁",
+            "碎玻璃多的图（孤儿院、玩具工厂）价值极高"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "amp-hidden-breath",
+          "nameEn": "",
+          "nameZh": "隐藏呼吸",
+          "aliases": ["躲藏回体力", "藏匿回气"],
+          "use": "进入躲藏点后立刻开始恢复体力。",
+          "howToGet": "暗影夫人 Doris 处购买，3 个代币。",
+          "tips": [
+            "技能类强化，适合爱用柜子/床底躲人的玩家",
+            "被追到没体力时钻柜子，几秒就能再跑一轮"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "amp-loud-noise",
+          "nameEn": "",
+          "nameZh": "刺耳噪音",
+          "aliases": ["噪音强化", "引怪强化"],
+          "use": "你扔出的瓶子、砖块声音更大，更容易把敌人引走。",
+          "howToGet": "暗影夫人 Doris 处购买，3 个代币。",
+          "tips": [
+            "工具类强化，专门为「引怪开路」打法服务",
+            "配合狭窄通道把敌人引到另一头，全队穿过去"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "amp-double-dose",
+          "nameEn": "",
+          "nameZh": "双倍剂量",
+          "aliases": ["双份注射", "针管双用"],
+          "use": "同一支注射器可以使用两次，等于多救一个人。",
+          "howToGet": "暗影夫人 Doris 处购买，3 个代币。",
+          "tips": [
+            "多人局价值极高，尤其是经常团灭的队伍",
+            "药物类强化，和「隐藏治疗」二选一看队伍配置"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "amp-hidden-heal",
+          "nameEn": "",
+          "nameZh": "隐藏治疗",
+          "aliases": ["躲藏回血", "藏匿治疗"],
+          "use": "进入躲藏点后立刻开始回血。",
+          "howToGet": "暗影夫人 Doris 处购买，3 个代币。",
+          "tips": [
+            "药物类强化，单刷/躲猫猫打法的核心",
+            "配合「隐藏呼吸」可以躲进去回满再出来",
+            "被追受伤时找个柜子钻进去，比站着嗑药安全"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "amp-strong-arm",
+          "nameEn": "",
+          "nameZh": "强力手臂",
+          "aliases": ["投掷强化", "大力手"],
+          "use": "投掷物伤害更高，砖头砸中的小怪会被直接砸倒。",
+          "howToGet": "暗影夫人 Doris 处购买，3 个代币。",
+          "tips": [
+            "技能类强化，和砖块是绝配",
+            "砖头能砸倒小怪，等于免费控场，救队友时很好用"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "amp-noise-reduction",
+          "nameEn": "",
+          "nameZh": "降噪",
+          "aliases": ["开门降噪", "奔跑降噪"],
+          "use": "奔跑、开门产生的噪音更小。",
+          "howToGet": "暗影夫人 Doris 处购买，3 个代币。",
+          "tips": [
+            "工具类强化，适合需要频繁穿门的图",
+            "和「奔跑撞门」处方一起点，既能快速过门又不吵"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "amp-quick-escape",
+          "nameEn": "",
+          "nameZh": "快速逃跑",
+          "aliases": ["受伤加速", "残血跑路"],
+          "use": "受伤后短时间内提升体力和移动速度。",
+          "howToGet": "暗影夫人 Doris 处购买，3 个代币。",
+          "tips": [
+            "技能类强化，被 Boss 打中反而变成加速，脱身很强",
+            "适合正面刚不过但跑得快的玩法"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "amp-antidote-body",
+          "nameEn": "",
+          "nameZh": "抗毒剂",
+          "aliases": ["抗毒", "理智回复"],
+          "use": "一段时间后理智自动回满，精神错乱的持续时间减半。",
+          "howToGet": "暗影夫人 Doris 处购买，3 个代币。",
+          "tips": [
+            "药物类强化，专治致幻者和双胞胎的毒伤",
+            "省解药格子，长图收益高"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-instant-use",
+          "nameEn": "",
+          "nameZh": "即刻使用",
+          "aliases": ["快速使用", "秒用道具"],
+          "use": "查看物品时按住左键就能直接使用，不用先拿进背包。",
+          "howToGet": "睡眠室出舱即见的药剂师 Emily Barlow，用代币学习处方(Prescriptions)，每个 2 个代币。",
+          "tips": [
+            "处方是被动永久升级，等级 1 共 7 项，学完全部 7 项才解锁等级 2",
+            "被追的时候少一步操作就是少一次死",
+            "新手第一批必点"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-slide",
+          "nameEn": "",
+          "nameZh": "滑行",
+          "aliases": ["滑铲", "Slide"],
+          "use": "移动中按蹲键可以滑铲，短时间加速并降低身位。",
+          "howToGet": "药剂师 Emily Barlow 处学习，2 个代币。",
+          "tips": [
+            "过低矮缺口、躲子弹/电棍时非常好用",
+            "滑铲接跑能拉出一小段距离"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-regeneration",
+          "nameEn": "",
+          "nameZh": "重生",
+          "aliases": ["健康再生", "自动回血"],
+          "use": "血量会缓慢自动恢复。",
+          "howToGet": "药剂师 Emily Barlow 处学习，2 个代币。",
+          "tips": [
+            "长图续航核心，能省下大量药物",
+            "回血速度慢，别指望战斗中回血"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-self-defense",
+          "nameEn": "",
+          "nameZh": "自我防护",
+          "aliases": ["自卫", "脱身", "挣脱强化"],
+          "use": "被敌人抓住时可以用瓶子或砖头脱身，不用等队友。",
+          "howToGet": "药剂师 Emily Barlow 处学习，2 个代币。",
+          "tips": [
+            "单刷必点，被抓一次就可能直接结束",
+            "前提是身上得有投掷物，出门记得捡"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-kick-assist",
+          "nameEn": "",
+          "nameZh": "踢击援助",
+          "aliases": ["踢开敌人", "救队友"],
+          "use": "把正在抓队友的敌人一脚踢开。",
+          "howToGet": "药剂师 Emily Barlow 处学习，2 个代币。",
+          "tips": [
+            "手里拿着重物时无效，救人前先把手上的东西放下",
+            "多人局救人第一优先级，比治疗更直接"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-savior",
+          "nameEn": "",
+          "nameZh": "救星降临",
+          "aliases": ["处决救援", "打断处决"],
+          "use": "踢开正在处决队友的敌人，直接把人从死亡线上拉回来。",
+          "howToGet": "药剂师 Emily Barlow 处学习，2 个代币。",
+          "tips": [
+            "和「踢击援助」是两回事：这个专门打断处决动画",
+            "看到处决提示一定要冲，晚一秒人就没了"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-run-through-door",
+          "nameEn": "",
+          "nameZh": "奔跑撞门",
+          "aliases": ["撞门", "破门冲锋"],
+          "use": "奔跑状态下可以直接把门撞开，会破坏上锁的门。",
+          "howToGet": "药剂师 Emily Barlow 处学习，2 个代币。",
+          "tips": [
+            "逃命时省下开门的一秒，很关键",
+            "会破坏锁门，别把队友反锁在里面",
+            "和「降噪」强化一起用，撞门声音也能小一点"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-inventory-expand",
+          "nameEn": "",
+          "nameZh": "物品栏扩充",
+          "aliases": ["四格背包", "背包扩容"],
+          "use": "物品栏从基础上限扩充到 4 格。",
+          "howToGet": "药剂师 Emily Barlow 处学习，需先学完等级 1 全部 7 项，2 个代币。",
+          "tips": [
+            "等级 2 的九项之一是它，几乎所有流派都值得点",
+            "多一格意味着能同时带药+电池+砖头+开锁器"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-strong-shove",
+          "nameEn": "",
+          "nameZh": "强力撞门",
+          "aliases": ["两下破门", "强撞"],
+          "use": "上锁的门撞两下就能破开。",
+          "howToGet": "药剂师 Emily Barlow 处学习，等级 2，2 个代币。",
+          "tips": [
+            "和「奔跑撞门」搭配，基本没有门能挡住你",
+            "注意别在需要安静的图里乱撞"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-door-technique",
+          "nameEn": "",
+          "nameZh": "破门技术",
+          "aliases": ["破门省体力", "省力撞门"],
+          "use": "破门不再消耗体力。",
+          "howToGet": "药剂师 Emily Barlow 处学习，等级 2，2 个代币。",
+          "tips": [
+            "追逃时体力就是命，撞门不掉体力等于多一段冲刺",
+            "和前两个撞门类处方是一套"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-speed-boost",
+          "nameEn": "",
+          "nameZh": "速度提升",
+          "aliases": ["移速强化", "跑得快"],
+          "use": "整体移动速度提升。",
+          "howToGet": "药剂师 Emily Barlow 处学习，等级 2，2 个代币。",
+          "tips": [
+            "最泛用的等级 2 处方之一，什么流派都能吃到",
+            "配合体力类强化，追逃体验明显不同"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-endurance",
+          "nameEn": "",
+          "nameZh": "持久耐力",
+          "aliases": ["耐力强化", "体力更耐久"],
+          "use": "体力消耗速度降低，能跑更久。",
+          "howToGet": "药剂师 Emily Barlow 处学习，等级 2，2 个代币。",
+          "tips": [
+            "和「运动健将」「跑酷技术」组成跑图三件套",
+            "前期点它比点输出类更实用"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-athlete",
+          "nameEn": "",
+          "nameZh": "运动健将",
+          "aliases": ["最大体力", "体力上限提升"],
+          "use": "提高体力上限。",
+          "howToGet": "药剂师 Emily Barlow 处学习，等级 2，2 个代币。",
+          "tips": [
+            "上限提升+消耗降低一起点，效果叠加最明显",
+            "长图必点"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-parkour",
+          "nameEn": "",
+          "nameZh": "跑酷技术",
+          "aliases": ["跳跃省体力", "攀爬省力"],
+          "use": "跳跃和攀爬消耗的体力更少。",
+          "howToGet": "药剂师 Emily Barlow 处学习，等级 2，2 个代币。",
+          "tips": [
+            "有大量翻越、爬梯、上高台的图收益高",
+            "配合滑行可以做出很流畅的跑酷路线"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "rx-battery-life",
+          "nameEn": "",
+          "nameZh": "电池寿命延长",
+          "aliases": ["省电", "电池耐久"],
+          "use": "夜视仪电池消耗变慢。",
+          "howToGet": "药剂师 Emily Barlow 处学习，等级 2，2 个代币。",
+          "tips": [
+            "纯黑关卡的核心处方，配合电池增强器几乎不用再捡电池",
+            "X 射线装具玩家也吃这个，因为升级后会补电池"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html", "https://gl.ali213.net/html/2026-10/1816433.html"]
+        },
+        {
+          "id": "rx-retraining",
+          "nameEn": "",
+          "nameZh": "重训",
+          "aliases": ["搬重物移速", "负重加速"],
+          "use": "携带大件物品(如汽油桶、重物)时移动速度不再大幅下降。",
+          "howToGet": "药剂师 Emily Barlow 处学习，等级 2，2 个代币。",
+          "tips": [
+            "搬运任务专用，平时用不上",
+            "需要来回搬东西的图，点了能快一倍"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html"]
+        }
+      ]
+    },
+    {
+      "id": "currency",
+      "nameZh": "货币与进度",
+      "items": [
+        {
+          "id": "murkoff-coin",
+          "nameEn": "Murkoff Coin",
+          "nameZh": "穆克夫硬币",
+          "aliases": ["红票", "硬币", "氪金币"],
+          "use": "主要用来买外观(皮肤)，也是解锁赛季目录的货币。",
+          "howToGet": "赛季目录奖励、「全新的你」目录、充值、部分任务奖励。",
+          "tips": [
+            "「全新的你」目录共 10 页，每页 100 穆克夫硬币，每页需要 75 印章解锁",
+            "用 1000 硬币解锁赛季目录后，可以靠目录奖励循环回本",
+            "别急着买皮肤，优先解锁目录更划算"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816053.html", "https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "stamps",
+          "nameEn": "Stamps",
+          "nameZh": "印章",
+          "aliases": ["邮票", "解锁章"],
+          "use": "解锁目录里的单个奖励项，是外观系统的主要消耗品。",
+          "howToGet": "每日签到、升级、重生、每日/每周任务、闪回疗法。",
+          "tips": [
+            "印章不难攒，难的是目录页解锁顺序，先解锁你想要的那几页",
+            "重生会固定奖励 100 印章 + 1 万经验",
+            "每周任务务必清完，是最稳定的印章来源"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816053.html"]
+        },
+        {
+          "id": "tokens",
+          "nameEn": "Tokens",
+          "nameZh": "代币",
+          "aliases": ["绿票", "技能点", "学习代币"],
+          "use": "学习处方、装具(Rig)、强化剂(Amps)的唯一货币。",
+          "howToGet": "升级奖励(每次升级给 1-3 个)，任务与活动也会给。",
+          "tips": [
+            "装具 2 个代币、处方 2 个、强化剂 3 个",
+            "装具升级：1-3 级各 1 个，4-6 级各 2 个，7-8 级各 3 个",
+            "前期优先点「自我防护」「即刻使用」这类生存处方，别先点花活",
+            "复发(重生)会把代币全部清零，点之前想清楚"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816053.html", "https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "reagent-tokens",
+          "nameEn": "Reagent Tokens",
+          "nameZh": "重生代币",
+          "aliases": ["蓝票", "试剂代币"],
+          "use": "攒满 100 个可以申请一次「复发」(Regeneration)，重置等级换取永久收益。",
+          "howToGet": "通关大图给 10 个，通关 MK 图给 5 个。",
+          "tips": [
+            "复发保留：关卡评分、印章、穆克夫硬币、重生代币、活动代币、全部时装与统计",
+            "复发清空：等级、处方、装具、强化剂、代币",
+            "复发给：1 个永久技能点 + 专属皮肤 + 门口次数标记",
+            "100 个不算多，正常玩一两周能到"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816053.html"]
+        },
+        {
+          "id": "level-xp",
+          "nameEn": "Level / XP",
+          "nameZh": "等级与经验",
+          "aliases": ["升级", "经验值", "等级"],
+          "use": "决定你能学多少东西，也是解锁强化剂行数的门槛。",
+          "howToGet": "完成任务、通关关卡、收集海报与证据都会给经验。",
+          "tips": [
+            "10 级解锁工具类强化剂第一行 3 项，之后每 15 级解锁下一行，50 级全解锁",
+            "99 级满经验后走廊左侧的门会开，可以坐下复发",
+            "复发后等级清零，但会带回永久收益"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html", "https://gl.ali213.net/html/2026-10/1816053.html"]
+        },
+        {
+          "id": "catalogs",
+          "nameEn": "Catalogs",
+          "nameZh": "目录(赛季目录 / 全新的你)",
+          "aliases": ["赛季目录", "战令", "新的你目录"],
+          "use": "外观与奖励的主要获取渠道，分赛季目录和常驻的「全新的你」目录。",
+          "howToGet": "大厅菜单进入；赛季目录需要 1000 穆克夫硬币解锁。",
+          "tips": [
+            "「全新的你」共 10 页，每页 100 硬币，每页 75 印章解锁",
+            "赛季目录解锁后靠奖励回本，长期玩基本等于免费",
+            "外观只影响好看程度，不影响属性"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816053.html"]
+        },
+        {
+          "id": "tasks",
+          "nameEn": "Tasks",
+          "nameZh": "任务(每日 / 每周)",
+          "aliases": ["每日任务", "每周任务", "任务栏"],
+          "use": "稳定产出印章与经验，是零氪玩家最主要的进度来源。",
+          "howToGet": "大厅任务面板，每天/每周刷新。",
+          "tips": [
+            "每日任务优先做，刷新快、性价比高",
+            "每周任务给得多，记得在重置前清掉",
+            "有些任务要求特定关卡或特定打法，接之前先看条件"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816053.html"]
+        }
+      ]
+    },
+    {
+      "id": "mechanics",
+      "nameZh": "核心操作机制",
+      "items": [
+        {
+          "id": "stamina",
+          "nameEn": "Stamina",
+          "nameZh": "体力(耐力)",
+          "aliases": ["耐力", "跑步条"],
+          "use": "奔跑、翻越、攀爬、破门都会消耗体力，耗尽后只能走。",
+          "howToGet": "默认能力；上限可通过「体力增强剂」和处方提升。",
+          "tips": [
+            "体力是逃命的核心资源，别在小怪身上浪费",
+            "没体力时用「秦王绕柱」：绕大柱子/大障碍，敌人转向慢，你能回体力",
+            "柱子越大越好绕，注意别绕进其他敌人怀里",
+            "体力增强剂优先级仅次于血量增强"
+          ],
+          "sources": ["https://gl.ali213.net/html/2023-6/1074735.html", "https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "crouch",
+          "nameEn": "Crouch",
+          "nameZh": "蹲伏",
+          "aliases": ["蹲下", "潜行"],
+          "use": "降低身位、减少脚步声，是躲杂兵和绕过睡觉敌人的基础操作。",
+          "howToGet": "默认能力；点「滑行」处方后可以在移动中滑铲。",
+          "tips": [
+            "蹲行经过尖叫者身边不会被吵醒",
+            "蹲着也能扔投掷物，落点更好控制",
+            "对失明类敌人(瞎子)蹲行几乎等于隐身"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816511.html"]
+        },
+        {
+          "id": "hiding-spots",
+          "nameEn": "Hiding Spots",
+          "nameZh": "躲藏点",
+          "aliases": ["柜子", "床底", "藏身处"],
+          "use": "柜子、床底、桌子下可以钻进去躲视线，敌人会在附近搜索但通常找不到。",
+          "howToGet": "地图固定刷新，靠近按交互键进入。",
+          "tips": [
+            "躲进去后敌人会在最后看到你的位置附近转圈，别急着出来",
+            "暗夜猎手的夜视仪能看穿黑暗，但对躲藏点同样会搜",
+            "点了「隐藏呼吸」可以在躲藏时回体力，「隐藏治疗」可以回血",
+            "被追进死角时钻柜子比硬跑更稳"
+          ],
+          "sources": ["https://gl.ali213.net/html/2023-6/1074735.html", "https://9game.cn/taoshengshilian/8159053.html"]
+        },
+        {
+          "id": "doors",
+          "nameEn": "Doors",
+          "nameZh": "门与关门机制",
+          "aliases": ["关门", "顶门", "陷阱门"],
+          "use": "关门能短暂阻断追击，但敌人会撞门；门上有灯说明门内有陷阱。",
+          "howToGet": "默认能力；「奔跑撞门」「强力撞门」等处方可以强化破门。",
+          "tips": [
+            "看到门框上有灯，先别急着开，说明里面布了陷阱",
+            "按住左键可以缓慢开门，慢慢开能先看清门内情况",
+            "普通杂兵撞门要几秒，大型杂兵撞得更快，别指望门能挡住他",
+            "把门关上再放路障，能把敌人卡很久"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816137.html", "https://gl.ali213.net/html/2026-10/1816511.html"]
+        },
+        {
+          "id": "noise",
+          "nameEn": "Noise",
+          "nameZh": "噪音机制",
+          "aliases": ["声音", "引怪", "响度"],
+          "use": "跑步、开门、砸玻璃、扔瓶子都会产生噪音，把敌人引到声音位置。",
+          "howToGet": "默认机制；「刺耳噪音」「降噪」等强化剂可以调整噪音大小。",
+          "tips": [
+            "敌人不聪明，只会去「最后听到声音的位置」附近搜索",
+            "想引怪就用瓶子砸远处地面，想安静就用砖头",
+            "多人局里一个人负责制造噪音，其他人摸过去，是标准打法",
+            "尖叫者对噪音最敏感，别在他旁边跑步"
+          ],
+          "sources": ["https://gl.ali213.net/html/2023-6/1074735.html", "https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "sanity",
+          "nameEn": "Sanity",
+          "nameZh": "理智值(精神值)",
+          "aliases": ["san", "精神值", "精神错乱"],
+          "use": "独立的第二套「血条」，被致幻气体、毒瓶、恐怖场景消耗，掉光会进入精神错乱。",
+          "howToGet": "默认机制；用解药恢复。",
+          "tips": [
+            "精神错乱时画面扭曲、操作受影响，比掉血更危险",
+            "致幻者是专门打理智的敌人，看到防毒面具先绕",
+            "解药回满理智，「抗毒剂」强化可以让理智自动恢复",
+            "治疗装具点出 Detox 升级后也能处理毒伤"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816511_6.html", "https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "nightvision",
+          "nameEn": "Night Vision",
+          "nameZh": "夜视仪与电池",
+          "aliases": ["夜视", "手电", "电量"],
+          "use": "黑暗区域的主要视野来源，消耗电池。",
+          "howToGet": "默认装备；电池从工具箱或地面拾取。",
+          "tips": [
+            "黑暗里不用夜视仪基本等于瞎，但开灯也会暴露位置",
+            "电池增强器提升容量，「电池寿命延长」处方降低消耗",
+            "暗夜猎手的图里，电池优先级高于药",
+            "X 射线装具升级后可以顺手补电池"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html", "https://gl.ali213.net/html/2026-10/1816511_2.html"]
+        },
+        {
+          "id": "grab-escape",
+          "nameEn": "Grab Escape",
+          "nameZh": "被抓住后的挣脱",
+          "aliases": ["挣脱", "QTE", "挣扎"],
+          "use": "被敌人抓住会进入挣扎状态，连续按键可以挣脱，失败会持续掉血。",
+          "howToGet": "默认机制；「自我防护」处方可以用投掷物主动脱身。",
+          "tips": [
+            "被扑击者扑倒时猛击左键，别停下来找道具",
+            "有「自我防护」处方时用瓶子/砖头可以直接脱身",
+            "挣脱后立刻拉开距离，别在原地补刀",
+            "耶格抓到基本等于秒杀，挣脱窗口很短甚至没有"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html", "https://gl.ali213.net/html/2026-10/1816511_8.html"]
+        },
+        {
+          "id": "teammate-revive",
+          "nameEn": "Teammate Revive",
+          "nameZh": "队友救援",
+          "aliases": ["救人", "复活队友", "拉人"],
+          "use": "队友被抓/被处决时可以踢开敌人救下；已经死亡的队友只能用注射器复活。",
+          "howToGet": "默认救援动作；「踢击援助」「救星降临」处方强化，「双倍剂量」强化剂让注射器用两次。",
+          "tips": [
+            "看到处决提示立刻冲，晚了人就没了",
+            "注射器位置固定，开局先记位置",
+            "救人前先清场或铺治疗气体，别把自己也搭进去",
+            "拿重物时踢不动敌人，救人前先把手上的东西放下"
+          ],
+          "sources": ["https://9game.cn/taoshengshilian/8159053.html", "https://www.52dushu.cn/wangyougl/63703.html"]
+        },
+        {
+          "id": "ping-mark",
+          "nameEn": "Ping / Mark",
+          "nameZh": "标记敌人",
+          "aliases": ["标记", "ping", "报点"],
+          "use": "把敌人位置标记出来，队友也能看到，是多人局最重要的沟通手段。",
+          "howToGet": "默认可标记；X 射线装具升级后可以把透视情报共享给全队。",
+          "tips": [
+            "看到 Boss 先标记再跑，队友能提前绕开",
+            "X 射线升级「共享情报」后，全队都能看到你扫到的敌人",
+            "标记配合语音报方位，效率最高"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816433.html", "https://gl.ali213.net/html/2023-5/1073983.html"]
+        },
+        {
+          "id": "traps",
+          "nameEn": "Traps",
+          "nameZh": "陷阱与拆除",
+          "aliases": ["机关", "地雷", "警报门"],
+          "use": "关卡里布满陷阱，分容器陷阱、电网、地雷、陷阱门、警报门五类，踩中掉血或报警。",
+          "howToGet": "默认机制；用投掷物引爆或用干扰器黑入。",
+          "tips": [
+            "两种处理思路：投掷物引爆，或用干扰器让电子装置失效",
+            "干扰器黑入后红光变绿光、滴滴声变规律声，对警报门有效",
+            "X 射线升级的电磁场能防止周围陷阱激活，适合跑路但拆不掉",
+            "门上有灯=门内有陷阱，先慢开门观察"
+          ],
+          "sources": ["https://gl.ali213.net/html/2026-10/1816137.html"]
+        },
+        {
+          "id": "secret-room",
+          "nameEn": "Secret Room",
+          "nameZh": "密室",
+          "aliases": ["蓝按钮房间", "隐藏房间"],
+          "use": "上锁的特殊房间，里面有随机补给，必出电池/体力/血量增强之一。",
+          "howToGet": "需要两人同时按墙上的蓝色按钮，或单人限时按两个按钮开启。",
+          "tips": [
+            "单人开密室要卡时间，先看清两个按钮位置再按",
+            "多人局分头站按钮，一次就开",
+            "密室里通常还有开锁器，记得拿"
+          ],
+          "sources": ["https://www.52dushu.cn/wangyougl/63703.html"]
+        }
+      ]
+    }
+  ]
+}

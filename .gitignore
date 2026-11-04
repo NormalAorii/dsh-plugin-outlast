@@ -1,0 +1,14 @@
+# 依赖与构建产物（本插件无构建步骤，正常只需要 JS 源码）
+node_modules/
+dist/
+*.log
+
+# 本地缓存 / 卡片渲染产物
+outlast-*.png
+.cache/
+
+# 编辑器与系统文件
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

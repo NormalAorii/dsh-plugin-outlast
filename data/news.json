@@ -1,0 +1,251 @@
+{
+  "updatedAt": "2026-10-29",
+  "feeds": [
+    {
+      "id": "steam-news-json",
+      "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=10&maxlength=800&format=json&cc=CN&l=schinese",
+      "status": "ok",
+      "format": "json",
+      "fields": {
+        "title": "appnews.newsitems[].title",
+        "date": "appnews.newsitems[].date",
+        "url": "appnews.newsitems[].url",
+        "body": "appnews.newsitems[].contents"
+      },
+      "notes": "实测 HTTP 200，无需 User-Agent、无需 Cookie，纯 GET 即可。date 是 Unix 秒时间戳（不是 ISO 字符串，也不是毫秒）。contents 是 HTML/纯文本片段，会被 maxlength 截断（截断处带结尾省略号）。源语言分裂：community announcement 为英文，第三方 feed 为原文（如 PlayGround.ru 为俄语）——cc=CN 与 l=schinese 对本接口无效，实测 l=schinese 与 l=english 返回内容完全一致，中文标题必须自行翻译。此接口混入 SteamDB、PlayGround.ru 等第三方 feed，用 feedname/feedlabel 字段区分，官方公告的 feedname 恒为 steam_community_announcements、author 为 RedBarrelsCM。根下 appnews.count 是全量条目总数（实测 115）。单次并发请求过多会间歇性报 TLS 失败，串行重试即可。",
+      "example": {
+        "title": "New Update | Geister Limited-Time Event, Community Event, MK-Challenges & More",
+        "date": "1792504829",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706695405"
+      }
+    },
+    {
+      "id": "steam-news-json-official-only",
+      "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=16&maxlength=600&format=json&feeds=steam_community_announcements",
+      "status": "ok",
+      "format": "json",
+      "fields": {
+        "title": "appnews.newsitems[].title",
+        "date": "appnews.newsitems[].date",
+        "url": "appnews.newsitems[].url",
+        "body": "appnews.newsitems[].contents"
+      },
+      "notes": "推荐作为机器人主源。加 feeds=steam_community_announcements 后只返回 Red Barrels 官方公告，实测 count 从 115 降到 89，噪音（SteamDB 榜单、俄语媒体转载）全部消失。同样无需 User-Agent，date 为 Unix 秒，l/cc 仍被忽略。gid 可作为去重主键。",
+      "example": {
+        "title": "New Update | Chemical Leak Limited-Time Event, 2 New MK-Challenges & more",
+        "date": "1788875869",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814455721"
+      }
+    },
+    {
+      "id": "steam-news-rss",
+      "url": "https://store.steampowered.com/feeds/news/app/1304930/?cc=CN&l=schinese",
+      "status": "failed",
+      "format": "rss",
+      "fields": {
+        "title": "item > title",
+        "date": "item > pubDate",
+        "url": "item > link",
+        "body": "item > description"
+      },
+      "notes": "failed。不是 URL 或参数问题，而是本机到 store.steampowered.com 的 TCP 443 不通：DNS 解析到 23.217.70.119，Test-NetConnection 443 = False，curl exit 35（SSL connect error），web_fetch 报 TypeError: fetch failed。加不加 User-Agent、http/https、带不带 cc&l、去掉查询串共 6 次全失败。同域 store.steampowered.com/api/appdetails 与 store.steampowered.com/news/app/1304930 亦全部 failed。推论：该 RSS 本身大概率有效，在境外/可直连 Steam 商店网络的部署机上可作备用源，但在当前网络只能用 api.steampowered.com 的 JSON。",
+      "example": {
+        "title": "",
+        "date": "",
+        "url": ""
+      }
+    },
+    {
+      "id": "steam-community-rss",
+      "url": "https://steamcommunity.com/games/1304930/rss/",
+      "status": "failed",
+      "format": "rss",
+      "fields": {
+        "title": "item > title",
+        "date": "item > pubDate",
+        "url": "item > link",
+        "body": "item > description"
+      },
+      "notes": "failed。steamcommunity.com 解析到 202.160.128.14，TCP 443 = False，web_fetch 报 fetch failed；公告详情页 https://steamcommunity.com/games/1304930/announcements/detail/<gid> 同样不可达。注意：Steam 新闻接口返回的 steamstore-a.akamaihd.net 外链会 302 跳到 steamcommunity.com，因此那类 url 在本机点开也会失败，展示层建议改用固定新闻枢纽页 https://store.steampowered.com/news/app/1304930 或直接展示公告正文。",
+      "example": {
+        "title": "",
+        "date": "",
+        "url": ""
+      }
+    },
+    {
+      "id": "steam-store-news-page",
+      "url": "https://store.steampowered.com/news/app/1304930?l=schinese",
+      "status": "failed",
+      "format": "html",
+      "fields": {
+        "title": "n/a",
+        "date": "n/a",
+        "url": "n/a",
+        "body": "n/a"
+      },
+      "notes": "failed。与 RSS 同因：store.steampowered.com 在本机 TCP 443 全阻断，网页版“最近更新”无法抓取。此源在可直连环境可用，当前环境标记为不可用，不做替代臆测。",
+      "example": {
+        "title": "",
+        "date": "",
+        "url": ""
+      }
+    },
+    {
+      "id": "redbarrels-official-news-rss",
+      "url": "https://redbarrelsgames.com/feed/",
+      "status": "ok",
+      "format": "rss",
+      "fields": {
+        "title": "channel > item > title",
+        "date": "channel > item > pubDate",
+        "url": "channel > item > link",
+        "body": "channel > item > content:encoded"
+      },
+      "notes": "HTTP 200，无需 User-Agent。WordPress 7.1.3 标准 RSS 2.0，language en-CA，lastBuildDate 显示 2026-09-04。字段坑：description 为空，正文只在 content:encoded 里，且是整段 HTML 页面结构（带 pb-row 布局 class、内嵌 <img srcset>），去标签后仍残留大量空白，需要压缩空白再截断。pubDate 为 RFC 822（如 Fri, 04 Sep 2026 22:34:00 +0000）。标题含 HTML 实体（&#038; = &，&#124; = |，&#8211; = –），需解码。",
+      "example": {
+        "title": "Roadmap &#038; Season 7.1 Dev Blog &#124; Update Coming Sept. 8",
+        "date": "Fri, 04 Sep 2026 22:34:00 +0000",
+        "url": "https://redbarrelsgames.com/news/sept4_devblog/"
+      }
+    },
+    {
+      "id": "redbarrels-official-news-html",
+      "url": "https://redbarrelsgames.com/news/",
+      "status": "ok",
+      "format": "html",
+      "fields": {
+        "title": "h3 标题文本（列表项内 a 标签）",
+        "date": "列表项内的英文日期文本，如 September 04, 2026",
+        "url": "a[href*=\"/news/\"]",
+        "body": "n/a（需进入详情页）"
+      },
+      "notes": "HTTP 200，无需 User-Agent。列表分 Latest 与 All 两段，日期是人读英文（September 04, 2026）而非 ISO，需自行 parse。注意时区差：官网写 September 04, 2026，对应 Steam 侧 Unix 时间戳 1788561196 = 2026-09-04 22:33 UTC（北京时间为 09-05 06:33），做日期归一化时要统一到 UTC 日，否则会与 Steam 标题里的 Sept. 8 / Sept. 17 对不上。该站更新明显滞后于 Steam：官网最新一篇为 2026-09-04，而 Steam 官方公告已到 2026-10-20，所以它只能当补充，不能当主源。",
+      "example": {
+        "title": "Roadmap & Season 7.1 Dev Blog | Update Coming Sept. 8",
+        "date": "September 04, 2026",
+        "url": "https://redbarrelsgames.com/news/sept4_devblog/"
+      }
+    },
+    {
+      "id": "reddit-outlasttrials-json",
+      "url": "https://www.reddit.com/r/OutlastTrials/new.json?limit=10",
+      "status": "failed",
+      "format": "json",
+      "fields": {
+        "title": "data.children[].data.title",
+        "date": "data.children[].data.created_utc",
+        "url": "data.children[].data.url / permalink",
+        "body": "data.children[].data.selftext"
+      },
+      "notes": "failed。web_fetch 直接拒绝：URL hostname \"www.reddit.com\" resolves to a non-public IP address——本机 DNS 被污染，www.reddit.com 解析到 31.13.92.37（Facebook 网段，非 Reddit 真实 IP），TCP 443 = False。字段路径按 Reddit 公开 JSON 惯例给出，但本次未取得真实响应，属未验证项，不要当作已确认可用。若部署机可正常访问 Reddit，需带 User-Agent（Reddit 会 429 无 UA 的请求），且 created_utc 是秒级浮点。",
+      "example": {
+        "title": "",
+        "date": "",
+        "url": ""
+      }
+    }
+  ],
+  "snapshot": [
+    {
+      "id": "switch2-launch-2026-10-28",
+      "titleEn": "The Outlast Trials вышла на Nintendo Switch 2 - кооперативный хоррор доступен в eShop",
+      "titleZh": "《逃生：试炼》无预告登陆 Nintendo Switch 2，eShop 已开卖",
+      "date": "2026-10-28",
+      "source": "PlayGround.ru（Steam 新闻流第三方转载）",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PlayGround.ru - официальная группа/1847920302230762",
+      "summaryZh": "据 PlayGround.ru 报道，Red Barrels 于 2026 年 10 月 27 日把《逃生：试炼》直接上架 Nintendo Switch 2 eShop，事前没有任何预告，美区定价 39.99 美元。Switch 2 版内容与其他平台一致，支持单人及最多四人合作。该消息经 vandal.elespanol.com、ixbt.games、gamefa.com 等多家外媒同期报道，可交叉验证；但截至本快照，Red Barrels 的 Steam 官方公告区尚未就此发文，细节以官方后续说明为准。",
+      "tags": ["平台", "Switch 2", "发售"]
+    },
+    {
+      "id": "season-7-2-geister-2026-10-20",
+      "titleEn": "New Update | Geister Limited-Time Event, Community Event, MK-Challenges & More",
+      "titleZh": "7.2 版本更新：Geister 限时活动回归，新增社区活动与两个 MK 挑战",
+      "date": "2026-10-20",
+      "source": "Steam 官方公告",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706695405",
+      "summaryZh": "Season 7.2 上线。Geister 限时活动回归，同步推出 Geister 2025 图鉴（Murkoff 商店获取）；新增社区活动 ESCAPE THE FACILITY，玩家需协助 Amelia 推进进度。新增两个 MK 挑战：COMPEL THE CHILDREN 与 SANITIZE THE FACTORY；此外重做了 Escalation Therapy 流程，加入 Favorites 收藏功能，并开启 Black Market 促销。",
+      "tags": ["更新", "限时活动", "MK挑战", "版本7.2"]
+    },
+    {
+      "id": "steamdb-peak-147k-2026-10-08",
+      "titleEn": "The Outlast Trials peaks at 147k players",
+      "titleZh": "同时在线峰值达 14.7 万，创发售三年后新高",
+      "date": "2026-10-08",
+      "source": "SteamDB（Steam 新闻流）",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/SteamDB/1845383656389059",
+      "summaryZh": "SteamDB 记录到《逃生：试炼》在 2026 年 10 月 8 日的同时在线人数峰值为 147,955 人。此时距游戏发售已约三年，属于长线运营中的异常高点，与同期秋季特卖的大幅折扣时间吻合。",
+      "tags": ["数据", "在线人数"]
+    },
+    {
+      "id": "steam-autumn-sale-90off-2026-10-02",
+      "titleEn": "The Outlast Trials получила рекордную скидку в 90% во время осенней распродажи",
+      "titleZh": "秋季特卖打出 90% 折扣，刷新史低",
+      "date": "2026-10-02",
+      "source": "PlayGround.ru（Steam 新闻流第三方转载）",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PlayGround.ru - официальная группа/1845383656385438",
+      "summaryZh": "Steam 秋季特卖期间《逃生：试炼》折扣达 90%，此前最高折扣仅 73%，因此这是游戏发售以来的最低价，活动持续到 10 月 8 日。报道同时提到当时评价为“特别好评”，9 万余条评测中 93% 为好评。",
+      "tags": ["促销", "折扣", "史低"]
+    },
+    {
+      "id": "hotfix-chemical-leak-0917",
+      "titleEn": "Hotfix Patch Notes | Chemical Leak - Sept. 17",
+      "titleZh": "热修补丁（9 月 17 日）：集中修复 bug 与崩溃",
+      "date": "2026-09-17",
+      "source": "Steam 官方公告",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010492566",
+      "summaryZh": "官方发布热修，处理玩家反馈的多项 bug 与崩溃问题，公告本身未逐条列出具体改动。官方引导遇到问题的玩家加入 18+ 官方 Discord 开 /ticket 直连客服，并附上通用反馈问卷入口。",
+      "tags": ["热修", "修复"]
+    },
+    {
+      "id": "hotfix-chemical-leak-0911",
+      "titleEn": "Hotfix Patch Notes | Chemical Leak - Sept. 11",
+      "titleZh": "热修补丁（9 月 11 日）：Escalation Ultra II 削弱，多项卡死修复",
+      "date": "2026-09-11",
+      "source": "Steam 官方公告",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262695372",
+      "summaryZh": "平衡性方面，从 Escalation 的 Ultra II 变体中移除了“永久伤害”与“无法复活”两个修饰，官方表示会在后续对 Escalation 流程与难度曲线做整体重做时再评估这两个修饰。修复项包括：Kress Twins 文档可在 FUND THE CAMPAIGN 之外被获取、主机端穿梭机过场视频丢失音频、可卡在主菜单/加载界面、AZERTY 键盘键位绑定错误。",
+      "tags": ["热修", "平衡调整", "Escalation"]
+    },
+    {
+      "id": "season-7-1-chemical-leak-2026-09-08",
+      "titleEn": "New Update | Chemical Leak Limited-Time Event, 2 New MK-Challenges & more",
+      "titleZh": "7.1 版本更新：Chemical Leak 限时活动与两个新 MK 挑战",
+      "date": "2026-09-08",
+      "source": "Steam 官方公告",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814455721",
+      "summaryZh": "Season 7.1 上线，主打限时活动 CHEMICAL LEAK：Murkoff 向试炼场释放毒气，配套推出专属限时图鉴。新增两个 MK 挑战 CHANGE THE PROGRAM 与 FUND THE CAMPAIGN。同时对 Invasion 与 Escalation 做了新一轮平衡与优化，并加入若干体验向选项与 Therapy 相关改动。",
+      "tags": ["更新", "限时活动", "MK挑战", "版本7.1"]
+    },
+    {
+      "id": "roadmap-devblog-2026-09-04",
+      "titleEn": "Roadmap & Season 7.1 Dev Blog | Update Coming Sept. 8",
+      "titleZh": "路线图与 7.1 开发者日志：确认 9 月 8 日更新，同时终止 MOD 支持",
+      "date": "2026-09-04",
+      "source": "Red Barrels 官网 / Steam 官方公告",
+      "url": "https://redbarrelsgames.com/news/sept4_devblog/",
+      "summaryZh": "官方公布 2026 年底之前的内容路线图，并确认 Season 7.1 于 9 月 8 日美东时间 10 点上线，包含两个新 MK 挑战与 CHEMICAL LEAK 限时活动。重要变更：自 9 月 8 日起不再支持 MOD，理由是部分 MOD 会带来不公平优势；原先依赖 MOD 的视野、镜头抖动、动态模糊、胶片颗粒、色差、镜头光晕、暗角、泛光、启动视频、HUD 开关等选项全部内置进设置菜单。文末另附 Outlast 十三周年周边系列。",
+      "tags": ["路线图", "开发者日志", "MOD", "政策变更"]
+    },
+    {
+      "id": "hotfix-boneyard-0725",
+      "titleEn": "Hotfix Patch Notes | Project Boneyard - July 25th",
+      "titleZh": "热修补丁（7 月 25 日）：修复 Invasion 摄像头模式内存溢出",
+      "date": "2026-07-25",
+      "source": "Steam 官方公告",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839041357032151",
+      "summaryZh": "小型热修，主要修复在 Invasion 摄像头模式下反复开关装备菜单可能触发的内存溢出（OOM）问题。官方同时征集 Invasion 2.0 与 Season 6: Project Judas 的玩家反馈。",
+      "tags": ["热修", "修复", "Invasion"]
+    },
+    {
+      "id": "season-7-project-boneyard-2026-07-14",
+      "titleEn": "Project Boneyard Patch Notes | Season 7: New Coyle Trial, New MKs, & much more!",
+      "titleZh": "第 7 赛季 Project Boneyard：新场景监狱农场，Coyle 回归",
+      "date": "2026-07-14",
+      "source": "Steam 官方公告",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1837955055366413",
+      "summaryZh": "Season 7 上线，新增试炼场景 Prison Farm（监狱农场）与对应新试炼 LOCKSOCK THE WARDEN，警长 Leland Coyle 回归。新增两个 MK 挑战 BRIBE THE JUDGES 与 CANCEL THE BROADCAST，以及新敌人 The Biter。系统层面加入装备（Rig）与刀具自定义、配装预设、精通任务，并对 Escalation 与 Invasion 做了大幅重做。",
+      "tags": ["更新", "赛季7", "新场景", "新敌人"]
+    }
+  ]
+}

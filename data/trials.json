@@ -1,0 +1,2203 @@
+{
+  "updatedAt": "2026-10-29T06:05:43.773Z",
+  "programs": [
+    {
+      "id": "program-base",
+      "nameZh": "基础计划（1.0）",
+      "nameEn": "Base Programs",
+      "desc": "1.0 正式版的主线计划群，按地图分组：警察局（杀死告密者 / 取消尸检 / 冲破封锁）、孤儿院（净化孤儿 / 喂养孩童 / 召集孤儿）、游乐园（碾碎坏苹果 / 惩罚恶人 / 打开大门），外加法院（为罪人开脱）、玩具工厂（亵渎富特曼）、码头（在药物中下毒）与单人关豪宅（受试者释放）。每个试炼单独算一个 Programme，完成当前这个才会解锁下一个。",
+      "unlock": "打完新手教程（序章）后从「杀死告密者」开始逐个解锁；每个试炼有四档难度（入门 / 标准 / 强化 / 精神外科），难度越高评级与代币收益越高。",
+      "trials": [
+        "kill-the-snitch",
+        "cancel-the-autopsy",
+        "sabotage-the-lockdown",
+        "cleanse-the-orphans",
+        "feed-the-children",
+        "foster-the-orphans",
+        "grind-the-bad-apples",
+        "punish-the-miscreants",
+        "open-the-gates",
+        "vindicate-the-guilty",
+        "pervert-the-futterman",
+        "poison-the-medicine",
+        "release-the-reagents"
+      ],
+      "rewards": [
+        "每个试炼首次通关给代币、经验与评级奖励",
+        "提升治疗等级（Therapy Level），解锁装具、处方与技能槽",
+        "解锁对应地图的 MK 挑战与证据收集物"
+      ],
+      "sources": [
+        "https://gl.ali213.net/html/2023-5/1073231.html",
+        "https://www.doyo.cn/article/515738"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "program-x",
+      "nameZh": "计划X",
+      "nameEn": "Program X",
+      "desc": "前三张地图（警察局 / 游乐园 / 孤儿院）的困难版本合集：禁用所有主动技能与投掷物，可变选项里带「致命特等资产」的关卡敌人一刀就能打倒你。是拿蓝票（Blue Tickets）的主要途径。",
+      "unlock": "通关基础计划的对应试炼后开启；通关计划X 累计拿齐 10 张蓝票，才解锁豪宅的单人关「受试者释放」。",
+      "trials": [
+        "kill-the-snitch",
+        "cleanse-the-orphans",
+        "grind-the-bad-apples"
+      ],
+      "rewards": [
+        "蓝票（Blue Tickets）",
+        "代币与高额经验（评级 A+ 收益最高）"
+      ],
+      "sources": [
+        "https://gl.ali213.net/html/2023-5/1073231.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "program-ultra",
+      "nameZh": "极限计划",
+      "nameEn": "Program Ultra",
+      "desc": "计划X 之上的极限难度：每局只允许一次复活，失败即整局结束，敌人更硬、资源更少。中文资料里通常和计划X 一起讲，具体规则以游戏内说明为准。",
+      "unlock": "通关计划X 后开启。",
+      "trials": [
+        "kill-the-snitch",
+        "cleanse-the-orphans",
+        "grind-the-bad-apples"
+      ],
+      "rewards": [
+        "最高档代币与经验",
+        "蓝票与专属成就"
+      ],
+      "sources": [
+        "https://gl.ali213.net/html/2023-5/1073231.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "season-1",
+      "nameZh": "第一赛季 · 佛朗哥登场",
+      "nameEn": "",
+      "desc": "2024 年 7 月更新：新 Prime Asset Franco \"Il Bambino\" Barbi 登场，配套玩具工厂（Toy Factory）地图与主线试炼「亵渎富特曼」。",
+      "unlock": "随版本更新常驻，通关前置基础试炼后出现在计划列表。",
+      "trials": [
+        "pervert-the-futterman"
+      ],
+      "rewards": [
+        "第一赛季目录印章",
+        "玩具工厂地图的 MK 挑战"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2024-7/850957.html",
+        "https://www.ali213.net/news/html/2024-7/852305.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "season-2",
+      "nameZh": "第二赛季 · Project Breach（缺口计划）",
+      "nameEn": "Project Breach",
+      "desc": "2024 年 12 月更新：新环境市中心（Downtown，Franco Barbi 坐镇）、新敌人投手（The Pitcher）、新装具干扰器（Jammer）。主线故事试炼「取悦检察官」，另加两项 MK：让家庭团聚、损毁富特曼家族。同期复刻限时活动「冬季杀戮」（Winter Kills，寒流变体 + 触手生成）。",
+      "unlock": "随版本更新常驻；活动部分按活动档期开放。",
+      "trials": [
+        "pleasure-the-prosecutor",
+        "reunite-the-family",
+        "deface-the-futtermans"
+      ],
+      "rewards": [
+        "第二赛季目录印章",
+        "投手出没的试炼变体",
+        "干扰器装具与升级"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2024-12/890351.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "season-3",
+      "nameZh": "第三赛季 · 复发计划",
+      "nameEn": "",
+      "desc": "2025 年 4 月更新：新地图郊区（Suburbs）与新敌人猎兵（The Hunter）。郊区是开阔户外图，围栏把社区切成几块，也是后续「瓦解社区」MK 的舞台。",
+      "unlock": "随版本更新常驻。",
+      "trials": [
+        "disrupt-the-community"
+      ],
+      "rewards": [
+        "第三赛季目录印章"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2025-7/945521.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "season-4",
+      "nameZh": "第四赛季 · 双王计划",
+      "nameEn": "",
+      "desc": "2025 年 7 月 15 日更新：新地图购物中心（Shopping Mall，政治游行主题装饰），新 BOSS 克雷斯双子（奥托与阿罗拉·克雷斯），重生系统 2.0，两项 MK：投票突围、审判被告。",
+      "unlock": "随版本更新常驻。",
+      "trials": [
+        "cast-the-vote",
+        "judge-the-accused"
+      ],
+      "rewards": [
+        "第四赛季目录印章",
+        "重生系统 2.0 相关奖励"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2025-7/945521.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "deep-burn",
+      "nameZh": "4.1 · 深度燃烧（Deep Burn）",
+      "nameEn": "Deep Burn",
+      "desc": "2025 年 9 月限时活动：火焰地雷、喷火器、浓烟遍场，投手（The Pitcher）频繁遭遇；新增两项 MK「贩运产物」（侵入 Franco Barbi 领地向街头倾销新型阿片）与「瓦解社区」（拆毁围栏）。",
+      "unlock": "活动期间开启（活动结束即下架），MK 挑战常驻。",
+      "trials": [
+        "trafficking-the-goods",
+        "disrupt-the-community"
+      ],
+      "rewards": [
+        "深度燃烧活动代币与限定目录奖励",
+        "灭火变体：用水桶扑灭燃烧桶"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2025-9/960331.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "project-messiah",
+      "nameZh": "第五赛季 · Project Messiah",
+      "nameEn": "Project Messiah",
+      "desc": "2025 年 12 月 9 日更新：新环境度假村（The Resort，雪盖的教堂式庄园），新 Prime Asset 修女 Liliya Bogomolova，主线试炼「洗劫拍卖会」，MK「捏造丑闻」「查获毒品」，同期复刻「冬季杀戮」。",
+      "unlock": "随版本更新常驻。",
+      "trials": [
+        "despoil-the-auction",
+        "fabricate-the-scandal",
+        "seize-the-narcotics"
+      ],
+      "rewards": [
+        "第五赛季目录印章",
+        "Liliya 相关变体与事件奖励"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1818118366185597"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "project-judas",
+      "nameZh": "第六赛季 · Project Judas",
+      "nameEn": "Project Judas",
+      "desc": "2026 年 3 月 24 日更新：新环境电视台（Television Studio），克雷斯双子回归，主线试炼「沉默偶像」（撕碎、烧毁、砸烂假偶像的脸），MK「查出谋杀」与被官方涂黑的「［已删改］」，另有 X 光 / 路障装具重做与限时活动 Scavenger。",
+      "unlock": "随版本更新常驻。",
+      "trials": [
+        "silence-the-idol",
+        "solve-the-murder",
+        "redacted"
+      ],
+      "rewards": [
+        "第六赛季目录印章",
+        "入侵赛季奖励与排行榜"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1827626365765752"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "project-boneyard",
+      "nameZh": "第七赛季 · Project Boneyard（坟场计划）",
+      "nameEn": "Project Boneyard",
+      "desc": "2026 年 7 月 14 日更新：新环境监狱农场（The Prison Farm，美国监狱农场），Coyle 回归，主线试炼「锁死典狱长」（Kill the Warden），MK「贿赂法官」「中断广播」，新 Ex-Pop「啃噬者」（The Biter，暂只出现在这三个关卡），装备/刀具自定义、载入预设、精通任务，以及血库活动（Blood Drive：用献血机永久降低本局最大血量换样本）。",
+      "unlock": "随版本更新常驻；Blood Drive 为限时活动。",
+      "trials": [
+        "locksock-the-warden",
+        "bribe-the-judges",
+        "cancel-the-broadcast"
+      ],
+      "rewards": [
+        "第七赛季目录（Project Boneyard Deluxe Catalog）",
+        "血库活动代币与限定奖励",
+        "精通任务奖励"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1837955055366413"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "chemical-leak",
+      "nameZh": "7.1 · 化学泄漏（Chemical Leak）",
+      "nameEn": "Chemical Leak",
+      "desc": "2026 年 9 月 8 日更新：限时活动化学泄漏（毒气灌满试炼场，找阀门关阀），同步两项 MK「更换节目」（散播真相、更换节目）与「资助竞选」（凑钱资助竞选），另有模组支持大改与入侵/升级模式调整。",
+      "unlock": "活动期间开启（2026-09-08 至 2026-10-06），MK 挑战常驻。",
+      "trials": [
+        "change-the-program",
+        "fund-the-campaign"
+      ],
+      "rewards": [
+        "化学泄漏限定目录与活动代币",
+        "关阀门变体奖励"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1842846814455721",
+        "https://www.ali213.net/news/html/2026-9/1037149.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "program-geister",
+      "nameZh": "7.2 · 盖斯特计划（Program Geister）",
+      "nameEn": "Program Geister",
+      "desc": "2026 年 10 月 20 日更新：盖斯特限时活动回归（幻觉治疗，取器官样本支线），新增两项 MK「劝诱孩童」（孤儿院护送神父）与「工厂净化」（嘎嘎鸭玩具工厂酸液处理），同时开启「逃出设施」社区活动（找 Escape Intel 图纸带出）与升级模式分层改动（Tier1 #1-20 / Tier2 #21-30 / Tier3 #31+，新增 BREAKING POINT 变体）。",
+      "unlock": "活动期间开启；两项 MK 安装更新后即出现在 MK 挑战列表（劝诱孩童为第一阶段、工厂净化为第二阶段，GENESIS 难度可用）。",
+      "trials": [
+        "compel-the-children",
+        "sanitize-the-factory"
+      ],
+      "rewards": [
+        "盖斯特活动代币与限定目录",
+        "逃出设施社区活动奖励"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1846651706695405",
+        "https://gl.ali213.net/html/2026-10/1817999.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "therapy-modes",
+      "nameZh": "常驻模式与限时活动计划",
+      "nameEn": "Routine Therapies & Events",
+      "desc": "除主线计划外的常驻玩法：每周治疗（Weekly Therapy，每周轮换的试炼+变体组合）、升级模式（Escalation Therapy，连续闯关，死亡即结束）、入侵模式（Invasion，与其他玩家对抗的伪装者局），以及限时活动计划：冬季杀戮（Winter Kills，寒流变体）、Scavenger（搜刮装具）、Prime Time（Prime Roulette 多 BOSS 轮盘 + MK 赢得真相/焚毁圣物）、Advent of Bogomolova（MK 铲除祸根/夷平工头）。",
+      "unlock": "通关基础计划后陆续开放；限时活动按档期上线。",
+      "trials": [
+        "win-the-truth",
+        "incinerate-the-relic",
+        "eliminate-the-legacy",
+        "flatten-the-foreman"
+      ],
+      "rewards": [
+        "活动代币与限定目录",
+        "每周治疗与升级模式的阶梯奖励",
+        "入侵段位奖励（Gold I 拿满）"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1832700592801092",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1823825466508668",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1827626365765752",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1846651706695405"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "trials": [
+    {
+      "id": "kill-the-snitch",
+      "nameEn": "Kill the Snitch",
+      "nameZh": "杀死告密者",
+      "aliases": [
+        "告密者",
+        "警察局关",
+        "第一关",
+        "电椅关"
+      ],
+      "kind": "trial",
+      "map": "警察局",
+      "difficulty": "低",
+      "players": "1-4",
+      "durationMin": 20,
+      "confidence": "high",
+      "summary": "把告密者一路推到放电室送他上电椅。开局先看处刑戏，然后下地下室找油重启发电机，再回来推车、开三道卷帘门，最后拉闸跑路。",
+      "objectives": [
+        "开场在电椅房看完处刑演出，目标变成去地下室找油",
+        "找到油桶、倒进发电机并重启，恢复供电",
+        "回到关告密者的房间，沿轨道开始推车",
+        "推车途中开三道卷帘门：先看门上的图案，再去对应尸体身上掏钥匙",
+        "把告密者推进放电室、拉下电闸",
+        "沿原路跑回撤离点"
+      ],
+      "walkthrough": [
+        "开场别急着动，处刑戏结束、电击小子走人之后再下楼。",
+        "下楼后一路往地下室深处走，油桶一般在发电机附近或者来路上，找不到就沿着黄色管线找。",
+        "油倒进发电机、按住交互重启，灯一亮就意味着全图通电，卷帘门可以开了。",
+        "回到告密者房间开始推车。推车过程中车会停，这时要开三道卷帘门才能继续。",
+        "每道卷帘门旁边的显示器上有一个图案，记住它；然后在满地图的尸袋里翻，掏到图案一致的尸体才能拿到钥匙。",
+        "掏错了只会掏出电击器，还会被电掉一格血，别乱试。",
+        "三道门都开完继续把车推到放电室，拉闸之后电击小子会从放电室门口右手边的门冲出来。",
+        "跑路前如果有地雷装具，提前在电击小子出来的那扇门放一颗，他会自己踩上去。"
+      ],
+      "tips": [
+        "带地雷（Mine）装具最舒服：雷炸完留下的烟能给你肾上腺素增益，正好一口气冲回撤离点。",
+        "掏尸体前先把图案拍下来（队友分工一人记一个门），否则跑回头很容易串。",
+        "推车时车就是掩体，被追可以绕车跑，别硬冲开阔地。",
+        "单人打建议全程蹲走、只在被追时冲刺，体力留给最后那段撤离。"
+      ],
+      "enemies": [
+        "Leland Coyle 电击小子（库伊尔，BOSS）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "经验与代币（按评级 A+ 至 D 结算）",
+        "推进 Program 进度，解锁后续试炼与 MK 挑战",
+        "地图内的证据/文件收集物"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html",
+        "https://www.9game.cn/taoshengshilian/8141326.html",
+        "https://www.3dmgame.com/gl/3887372.html",
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "Police Station",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "cancel-the-autopsy",
+      "nameEn": "Cancel the Autopsy",
+      "nameZh": "取消尸检",
+      "aliases": [
+        "尸检",
+        "掏三把钥匙"
+      ],
+      "kind": "mk-challenge",
+      "map": "警察局",
+      "difficulty": "低",
+      "players": "1-4",
+      "durationMin": 8,
+      "confidence": "high",
+      "summary": "警察局最短的 MK：翻尸体掏三把钥匙，开三个锁就结束，熟练之后几分钟一把。",
+      "objectives": [
+        "在警察局里翻尸体找出三把钥匙",
+        "用三把钥匙打开三个锁",
+        "撤离"
+      ],
+      "walkthrough": [
+        "进门直接开始翻尸袋，三把钥匙分散在整张图，按区域划分找最快。",
+        "组队就一人负责一片区域，找到钥匙喊一声。",
+        "三个锁都在同一片区域，钥匙齐了直接开。"
+      ],
+      "tips": [
+        "这是刷代币/刷经验最快的图之一，熟路之后单人也很快。",
+        "翻尸体有声音，附近有怪就先清视线再翻。"
+      ],
+      "enemies": [
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html",
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "Police Station",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "sabotage-the-lockdown",
+      "nameEn": "Sabotage the Lockdown",
+      "nameZh": "冲破封锁",
+      "aliases": [
+        "封锁",
+        "搬油桶",
+        "发电机"
+      ],
+      "kind": "mk-challenge",
+      "map": "警察局",
+      "difficulty": "低",
+      "players": "1-4",
+      "durationMin": 8,
+      "confidence": "high",
+      "summary": "搬油桶去重启发电机的短关卡，油就在开局下楼楼梯旁边，搬到终点发电机就完事。",
+      "objectives": [
+        "在开局下楼的楼梯旁拿油桶",
+        "把油搬到地图另一端的发电机",
+        "重启发电机，从发电机旁的卷帘门撤离"
+      ],
+      "walkthrough": [
+        "开局下楼，楼梯旁边就有油桶，别跑远。",
+        "抱着油桶一路走到地图尽头的发电机，路上怪多就先把桶放下、清完再搬。",
+        "到发电机倒油、重启，旁边的卷帘门就是撤离点。"
+      ],
+      "tips": [
+        "搬桶时不能跑太快也不能攻击，队友要在前面开路。",
+        "桶可以放下，遇敌先放桶再跑，回头再搬。"
+      ],
+      "enemies": [
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html",
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "Police Station",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "cleanse-the-orphans",
+      "nameEn": "Cleanse the Orphans",
+      "nameZh": "净化孤儿",
+      "aliases": [
+        "孤儿院关",
+        "调频关",
+        "换胶片"
+      ],
+      "kind": "trial",
+      "map": "孤儿院",
+      "difficulty": "中",
+      "players": "1-4",
+      "durationMin": 25,
+      "confidence": "high",
+      "summary": "孤儿院比前两张图小但更立体。核心流程是去二楼广播站调频、按提示换录像带、掏钥匙重启发电机，最后撤离时鹅莓妈妈会在教堂门口蹲你。",
+      "objectives": [
+        "去孤儿院二楼广播站调频",
+        "按提示去对应房间继续调频",
+        "下楼换胶片（共四个教室，其中一间没人，只需换三盘）",
+        "去教堂先摧毁右边放音乐的装置",
+        "找钥匙并重启发电机",
+        "回撤离点撤离"
+      ],
+      "walkthrough": [
+        "先上二楼广播站调频，频率对上之后会有提示指向下一个房间。",
+        "按提示一个个房间调过去，调完下楼换胶片，四个教室只有一个不用换，别白跑。",
+        "换完胶片去教堂，教堂右边有个一直在放音乐的装置，先把它砸了，不然会一直引怪。",
+        "找钥匙和重启发电机跟警察局一个套路，可以同时进行：一个人翻尸体找钥匙，一个人找油桶。",
+        "钥匙找齐就回去锯那人的腿（剧情交互），别在教堂里磨蹭。",
+        "撤离点就在教堂，一旦触发撤离鹅莓妈妈会立刻刷在教堂门口。"
+      ],
+      "tips": [
+        "撤离前先在教堂门口放一颗地雷，鹅莓妈妈会直接踩雷，然后用地雷烟给的肾上腺素一路冲回撤离点。",
+        "找钥匙很快，找到就立刻回教堂，别贪资源。",
+        "这张图楼层多、楼梯窄，被追时别往楼上跑，容易被堵。"
+      ],
+      "enemies": [
+        "Mother Gooseberry 鹅莓妈妈（BOSS）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "经验与代币（按评级结算）",
+        "推进 Program 进度",
+        "地图内的证据/文件收集物"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html",
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "Orphanage",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "feed-the-children",
+      "nameEn": "Feed the Children",
+      "nameZh": "喂养孩童",
+      "aliases": [
+        "找漂白剂",
+        "漂白剂"
+      ],
+      "kind": "mk-challenge",
+      "map": "孤儿院",
+      "difficulty": "中",
+      "players": "1-4",
+      "durationMin": 10,
+      "confidence": "high",
+      "summary": "孤儿院图里找漂白剂（bleach）的短关卡，和「收养孤儿」同一张图，都要分头找。",
+      "objectives": [
+        "在孤儿院里找出漂白剂",
+        "把漂白剂送到指定位置",
+        "撤离"
+      ],
+      "walkthrough": [
+        "漂白剂散落在各楼层的储藏间/杂物间，按楼层分工最快。",
+        "找到就搬，搬运时不能打，先清路。",
+        "孤儿院立体、楼梯多，搬运路线提前想好。"
+      ],
+      "tips": [
+        "和「收养孤儿」同图，可以连打熟悉路线。",
+        "搬运目标重，遇到鹅莓妈妈先把东西放下跑。"
+      ],
+      "enemies": [
+        "Mother Gooseberry 鹅莓妈妈（BOSS）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html",
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "Orphanage",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "foster-the-orphans",
+      "nameEn": "Foster the Orphans",
+      "nameZh": "召集孤儿",
+      "aliases": [
+        "召集孤儿",
+        "收养孤儿",
+        "召集上帝之子",
+        "Foster the Orphans",
+        "孤儿院调频"
+      ],
+      "kind": "mk-challenge",
+      "map": "孤儿院",
+      "difficulty": "中",
+      "players": "1-4",
+      "durationMin": 10,
+      "confidence": "high",
+      "summary": "孤儿院图里做调频，和主线「净化孤儿」共用一套调频机制，但流程更短。",
+      "objectives": [
+        "找到调频装置并调频",
+        "按提示完成所有频点",
+        "撤离"
+      ],
+      "walkthrough": [
+        "先上二楼广播站开调频，然后按提示跑对应房间。",
+        "每个频点都要对到提示的频率，误差太大会重来。",
+        "调频时不能动，先确认房间安全。"
+      ],
+      "tips": [
+        "调频是纯站桩，队友要在门口看着。",
+        "记一下房间顺序，第二次打会快很多。"
+      ],
+      "enemies": [
+        "Mother Gooseberry 鹅莓妈妈（BOSS）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html"
+      ],
+      "mapEn": "Orphanage",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "grind-the-bad-apples",
+      "nameEn": "Grind the Bad Apples",
+      "nameZh": "碾碎坏苹果",
+      "aliases": [
+        "坏苹果",
+        "游乐园关",
+        "牙根隧道"
+      ],
+      "kind": "trial",
+      "map": "游乐园",
+      "difficulty": "中",
+      "players": "1-4",
+      "durationMin": 25,
+      "confidence": "high",
+      "summary": "游乐园这张图任务最杂：投心脏小游戏、顺着电线找电池拆掉、推车、顺管道找阀门，最后把小孩碾碎。地图本身很绕，撤离基本要原路返回。",
+      "objectives": [
+        "先完成投掷心脏的小游戏（把心脏扔进指定装置）",
+        "沿电线走向找电池，把电池拆下来",
+        "推动推车到指定位置",
+        "沿管道找出水口和压力表，找到对应阀门并关掉",
+        "把小孩送进机器碾碎，任务完成",
+        "从牙根娱乐设施走出去，沿原路回撤离点"
+      ],
+      "walkthrough": [
+        "开局先把投心脏的小游戏做掉，这一步会把后续几段流程串起来。",
+        "找电池就顺着墙上的电线走，电线会一路拉到电池所在的位置，别瞎逛。",
+        "水阀要先找压力表：A、B 两块表在楼下，C、D 两块表在楼上，压力表下面连着水管，顺着水管就能摸到阀门。",
+        "推车段要人配合，一个人推、其他人清路和开门，单人打就慢慢挪、听到脚步先停。",
+        "碾碎小孩之后机器会展开，可以从机器中间直接穿出去离开牙根娱乐设施，但还是得走一段才能回撤离点。",
+        "这张图最容易翻车的不是任务，是撤离时迷路：进来的时候就把路线记一下，回程别乱拐。"
+      ],
+      "tips": [
+        "撤离一定原路返回，有玩家就是在计划X版里想抄近路跑进死胡同被杀的。",
+        "组队分头：一人找电池、一人找压力表，能省一半时间。",
+        "游乐园的杂兵刷新点多，声音大，尽量走外围。"
+      ],
+      "enemies": [
+        "Mother Gooseberry 鹅莓妈妈（BOSS）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "经验与代币（按评级结算）",
+        "推进 Program 进度",
+        "地图内的证据/文件收集物"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html",
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "Fun Park",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "punish-the-miscreants",
+      "nameEn": "Punish the Miscreants",
+      "nameZh": "惩罚恶人",
+      "aliases": [
+        "碾玩偶",
+        "四个小孩玩偶"
+      ],
+      "kind": "mk-challenge",
+      "map": "游乐园",
+      "difficulty": "中",
+      "players": "1-4",
+      "durationMin": 10,
+      "confidence": "high",
+      "summary": "在游乐园那张「玩心脏小游戏」的图里找出并碾碎四个小孩玩偶，其中一个固定刷在楼上。",
+      "objectives": [
+        "找出四个小孩玩偶",
+        "把四个玩偶全部碾碎",
+        "按原路撤离"
+      ],
+      "walkthrough": [
+        "四个玩偶分散在整张图，固定有一个在楼上，先上楼拿那个。",
+        "剩下三个按区域扫，玩偶会发出声音，安静下来听一下能定位。",
+        "全部碾碎之后撤离点按原路返回。"
+      ],
+      "tips": [
+        "图很绕，进来就记路线，回程别拐错。",
+        "计划X版本的这张图 BOSS 是「致命特等资产」，被打倒就直接躺，别硬碰。"
+      ],
+      "enemies": [
+        "Mother Gooseberry 鹅莓妈妈（BOSS，计划X版为致命特等资产）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html"
+      ],
+      "mapEn": "Fun Park",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "open-the-gates",
+      "nameEn": "Open the Gates",
+      "nameZh": "打开大门",
+      "aliases": [
+        "找电池开门",
+        "四道门"
+      ],
+      "kind": "mk-challenge",
+      "map": "游乐园",
+      "difficulty": "中",
+      "players": "1-4",
+      "durationMin": 10,
+      "confidence": "high",
+      "summary": "顺着电线找电池、拆电池，依次打开四道大门，第四道门就是撤离点。",
+      "objectives": [
+        "沿电线找到电池",
+        "拆下电池，用它开启大门",
+        "依次打开四道大门",
+        "从第四道门撤离"
+      ],
+      "walkthrough": [
+        "进门先看墙上的电线走向，电线会一路指到电池所在位置。",
+        "拆电池要按住交互，拆的时候不能动，先确认周围没怪。",
+        "拿着电池去开对应的门，四道门依次开，第四道就是撤离点。"
+      ],
+      "tips": [
+        "计划X版会封锁大部分道路，路线变窄，别按标准版的路线硬走。",
+        "电池搬运时同样不能攻击，队友开路。"
+      ],
+      "enemies": [
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html"
+      ],
+      "mapEn": "Fun Park",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "vindicate-the-guilty",
+      "nameEn": "Vindicate the Guilty",
+      "nameZh": "为罪人开脱",
+      "aliases": [
+        "法院关",
+        "假审判",
+        "法庭"
+      ],
+      "kind": "trial",
+      "map": "法院",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 25,
+      "confidence": "low",
+      "summary": "法院主题关卡，剧情上是一场被安排好的假审判，主 BOSS 是库伊尔（Leland Coyle）。具体分阶段目标中文资料稀缺，这里只保留能确认的部分。",
+      "objectives": [
+        "在法院里完成被安排好的「审判」流程（法庭戏阶段）",
+        "躲开巡逻的库伊尔与杂兵，推进流程并撤离"
+      ],
+      "walkthrough": [
+        "法院是走廊+法庭大厅结构，走廊长、视野开阔，尽量贴着墙蹲走。",
+        "法庭大厅是主要交战场地，库伊尔会在这里巡逻，听到电击声就先躲进侧房。",
+        "这张图目前中文详细流程资料很少，建议先单人跑一遍标准难度记路，再打高难。"
+      ],
+      "tips": [
+        "带 X 光（X-Ray）装具，隔墙看库伊尔的位置，法院房间多很容易被堵门。",
+        "别在法庭大厅中央停太久，那里没有掩体。",
+        "社区整理，以游戏内为准：本关中文名与地图归属只在玩家攻略标题里出现，英文名未能核实。"
+      ],
+      "enemies": [
+        "Leland Coyle 电击小子（库伊尔，BOSS）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "经验与代币（按评级结算）",
+        "推进 Program 进度",
+        "法院相关 MK 挑战"
+      ],
+      "sources": [
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game",
+        "https://3g.ali213.net/gl/html/1073231.html"
+      ],
+      "mapEn": "Courthouse",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "pervert-the-futterman",
+      "nameEn": "Pervert the Futterman",
+      "nameZh": "亵渎富特曼",
+      "aliases": [
+        "玩具工厂关",
+        "工厂关",
+        "感应门"
+      ],
+      "kind": "trial",
+      "map": "玩具工厂",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 30,
+      "confidence": "low",
+      "summary": "玩具工厂是公认难的一张图：怪多、任务难、还有满图的感应门要拿箱子卡。最后有 BOSS 战，可以用桌子卡身位。",
+      "objectives": [
+        "进入工厂厂区，通过一道道感应门（需要用箱子卡住门）",
+        "完成厂区内的任务目标",
+        "最终 BOSS 战：解决掉追你的 BOSS"
+      ],
+      "walkthrough": [
+        "进厂区之前先带点防身的东西（眩晕/地雷），被偷袭至少有反应时间。",
+        "下来先找箱子——箱子是过感应门的关键，空手过去会被门挡住、还会被弹开。",
+        "过感应门的方法：先抱着箱子走到门前，把箱子丢在自己够得到的极限距离，让门保持开启但不关闭。",
+        "然后走到门中间背对箱子、按 C 蹲下，快速转身抓箱子、往后跳，趁门关之前进房间。",
+        "后面所有感应门都是同一套操作，练熟能省很多时间、也安全很多。",
+        "打到 BOSS 关别想着回头反打，空间太窄容易被围。先上楼跑进有铁门的房间躲一下。",
+        "进房间后站在方形长桌的后方（站在长边、BOSS 够得到你的位置），BOSS 会疯狂攻击但判定上打不到你，队友趁机输出。"
+      ],
+      "tips": [
+        "卡门操作手速别太慢，箱子一定要放在自己拿得到的极限距离。",
+        "BOSS 很智能、会开门，单人不建议硬刚，多人一人拉仇恨其他人打最稳。",
+        "场上有火男（Molotov）这种会喷火/扔燃烧瓶的敌人时别用桌子卡位，火光会烧到你。",
+        "以下步骤为社区复盘整理，具体位置与数量以游戏内为准。"
+      ],
+      "enemies": [
+        "工厂 BOSS（会开门追人的大体型敌人）",
+        "Molotov 火男（扔燃烧瓶/喷火）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "经验与代币（按评级结算）",
+        "推进 Program 进度",
+        "玩具工厂相关 MK 挑战"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1462323.html",
+        "https://3g.ali213.net/gl/html/1462247.html",
+        "https://www.9game.cn/taoshengshilian/10312845.html",
+        "https://www.ginx.tv/en/pervert-the-futterman-trial-walkthrough"
+      ],
+      "mapEn": "Toy Factory",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "poison-the-medicine",
+      "nameEn": "Poison the Medicine",
+      "nameZh": "在药物中下毒",
+      "aliases": [
+        "码头关",
+        "码头地图",
+        "制毒关",
+        "2024 DLC 新图"
+      ],
+      "kind": "trial",
+      "map": "码头",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 30,
+      "confidence": "high",
+      "summary": "2024 年 DLC 加的码头图，主线是潜入毒品实验室、把毒品做出来再下毒，最后把毒货藏进船上的人体里。流程长、要对着数字调焦，第一次打很容易卡在面粉和推车上。",
+      "objectives": [
+        "找到毒品实验室（从洞口进去直走，左转再右转）",
+        "到制毒的房间拉闸开始制毒",
+        "按配方找面粉：用解码器对焦，眼睛图案=137、三角=683、五角星=913",
+        "把面粉装进推车，推车送到实验室装满毒品",
+        "找齐毒药，从指定位置把毒灌进去",
+        "摇动机器把有毒的毒品打包",
+        "拿货上船，用锯子锯开两具人体，把毒品塞进肚子里（一个人体最多藏三个）"
+      ],
+      "walkthrough": [
+        "开局先找毒品实验室。地图上有爆炸陷阱，标准难度踩一次掉一格血。",
+        "从洞口进去直走，左转再右转就能到实验室区域。",
+        "去制毒房间的路上有机关，蹲下或者跳过去，别硬吃。",
+        "到制毒位拉闸开始制毒，然后开始找面粉。",
+        "面粉要用解码器对焦：解码器离目标越近，屏幕上的标越多；按住右键对上焦，眼睛图案是 137，三角是 683，五角星是 913。",
+        "对好焦拿到面粉后装进推车，因为面粉不够，得把推车一路送回实验室。",
+        "毒品做好后找齐所有毒药，从固定位置把毒灌进去，然后摇机器把毒货打包。",
+        "最后拿货上船，找到船上的两具人体，用锯子锯开肚子把毒品塞进去，一个人体最多塞三个，塞完就通关。"
+      ],
+      "tips": [
+        "推车段是主要翻车点：推车时人不能离车太远，怪一来先跑开再回来接着推。",
+        "解码器找人可以顺手扫一遍，标多的方向就是目标所在。",
+        "第一次玩建议先选低难度，码头的任务链一旦被追断，重跑很花时间。",
+        "记数字比记图案快：137 眼睛、683 三角、913 五角星。"
+      ],
+      "enemies": [
+        "Ex-Pop 变异囚犯（杂兵）",
+        "码头的特殊敌人与陷阱（爆炸陷阱、地雷）"
+      ],
+      "rewards": [
+        "经验与代币（按评级结算）",
+        "码头相关收集物与文件"
+      ],
+      "sources": [
+        "https://www.9game.cn/news/10280450.html",
+        "https://3g.ali213.net/gl/html/1462045.html",
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "The Docks",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "pleasure-the-prosecutor",
+      "nameZh": "取悦检察官",
+      "nameEn": "",
+      "aliases": [
+        "市中心关",
+        "检察官",
+        "Franco 市中心关"
+      ],
+      "kind": "trial",
+      "map": "市中心",
+      "difficulty": "高",
+      "program": "第二赛季 · Project Breach（缺口计划）",
+      "players": "1-4",
+      "durationMin": 25,
+      "confidence": "low",
+      "summary": "2024 年 12 月第二赛季加入的市中心（Downtown）故事试炼，主 BOSS 是 Franco \"Il Bambino\" Barbi。官方描述是「让弗朗哥的狡猾歌舞表演自相残杀」。中文详细流程资料极少，英文名未核实。",
+      "objectives": [
+        "进入市中心剧院/歌舞厅，看完 Franco 的开场演出",
+        "按舞台提示推进剧情，让 Franco 的歌舞表演互相残杀",
+        "躲开 Franco 与投手（The Pitcher）的骚扰，完成收尾目标",
+        "从市中心撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：从市中心街区入口出发，沿主街走向最大的霓虹招牌建筑（剧院），路上先用夜视确认有没有投手在楼顶——他会朝你脚边扔燃烧瓶。",
+        "步骤 2：剧院内是分阶段演出，Franco 在台上主持。按目标栏提示到后台/包厢互动（拿道具、按舞台机关），每完成一段他就会换位，别在台前空地停。",
+        "步骤 3：演出全部结束后 Franco 会亲自追你，绕回主街用报亭、垃圾箱、车后躲，等他走开再继续；被追时别往剧院后台的死路钻。",
+        "步骤 4：目标清空后撤离点一般开在剧院后巷，不要从来的主街方向跑，主街是投手最好的投掷角度。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准：本条的阶段划分来自官方公告与游侠的赛事说明，具体机关位置没有中文图文可核对。",
+        "带干扰器（Jammer）装具，可以隔门禁用机关、顺手开箱拿药。",
+        "Franco 体型大但转身慢，绕柱子比直线跑安全。"
+      ],
+      "enemies": [
+        "Franco \"Il Bambino\" Barbi（BOSS）",
+        "The Pitcher 投手（远程燃烧瓶）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "经验与代币（按评级结算）",
+        "第二赛季奖励与目录印章",
+        "市中心地图的 MK 挑战"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2024-12/890351.html",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1818118366185597"
+      ],
+      "mapEn": "Downtown"
+    },
+    {
+      "id": "despoil-the-auction",
+      "nameZh": "洗劫拍卖会",
+      "nameEn": "Despoil the Auction",
+      "aliases": [
+        "拍卖会",
+        "度假村关",
+        "教堂关"
+      ],
+      "kind": "trial",
+      "map": "度假村",
+      "difficulty": "高",
+      "program": "第五赛季 · Project Messiah",
+      "players": "1-4",
+      "durationMin": 25,
+      "confidence": "low",
+      "summary": "第五赛季（2025-12-09）新增的度假村（The Resort）主线试炼，主 BOSS 是新 Prime Asset 修女 Liliya Bogomolova。官方目标文案：「一件新玩物即将上拍，把它全毁了」。中文名「洗劫拍卖会」为社区意译，英文名已由 Steam 公告核实。",
+      "objectives": [
+        "进入度假村，找到 Liliya 办的地下拍卖会场",
+        "破坏拍卖流程：夺走/毁掉拍品，砸掉竞价设备",
+        "躲开 Liliya 与教团信徒，把目标物带出",
+        "从度假村撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：从雪盖的度假村庭院进入主楼，先上二楼宴会厅确认拍卖台位置——目标栏会给出第一件拍品。",
+        "步骤 2：拍品不在台上就在后台储藏室，需要先在侍者区/办公室找钥匙卡开储藏室门，拿到后再回台上把拍品换走。",
+        "步骤 3：把竞价设备（拍卖槌、竞价铃）逐个砸掉；每砸一处 Liliya 会向该房间移动，砸完立刻换层。",
+        "步骤 4：目标清空后 Liliya 进入巡逻加速状态，用 X 光装具隔墙看她位置，走侧楼梯回一楼，从后门车库撤离。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准：本条的机关类型来自官方目标文案推断，具体房号没有中文图文可核对。",
+        "Liliya 是伏击型 BOSS，走廊拐角是她的主场，宁可绕远也别贴墙角走。",
+        "带 X 光装具，这张图房间多、门多，隔墙确认她的巡逻线能省一半时间。"
+      ],
+      "enemies": [
+        "Liliya Bogomolova 修女（Prime Asset）",
+        "教团信徒（杂兵）",
+        "Ex-Pop 变异囚犯"
+      ],
+      "rewards": [
+        "经验与代币（按评级结算）",
+        "第五赛季目录印章",
+        "度假村地图的 MK 挑战"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1818118366185597"
+      ],
+      "mapEn": "The Resort"
+    },
+    {
+      "id": "silence-the-idol",
+      "nameZh": "沉默偶像",
+      "nameEn": "Silence the Idol",
+      "aliases": [
+        "电视台关",
+        "偶像",
+        "Vanier"
+      ],
+      "kind": "trial",
+      "map": "电视台",
+      "difficulty": "高",
+      "program": "第六赛季 · Project Judas",
+      "players": "1-4",
+      "durationMin": 25,
+      "confidence": "low",
+      "summary": "第六赛季（2026-03-24）新增的电视台（Television Studio）主线试炼，BOSS 是 Otto 与 Arora Kress 双胞胎。官方目标文案：「撕碎、烧毁、砸烂那张虚伪魅力的脸」。中文名「沉默偶像」为社区意译，英文名已由 Steam 公告核实。",
+      "objectives": [
+        "进入电视台，找到主播 Bob Vanier 的演播厅",
+        "破坏他的宣传物：撕海报、烧竞选物料、砸脸部雕像",
+        "把 Murkoff 自家候选人送上主播台",
+        "躲开克雷斯双子，从装卸区撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：从电视台大厅进演播区，先摸到导播间（控制室），目标栏会列出需要破坏的宣传物清单。",
+        "步骤 2：按清单跑化妆间、道具间、走廊海报墙，每处都是长按互动；烧物料要先去茶水间拿打火机/火柴。",
+        "步骤 3：候选人的道具箱在化妆间最里侧，拿到后回主播台放上去，会触发一段直播演出，期间双子会封锁走廊。",
+        "步骤 4：演出结束后从摄影棚后方的装卸区撤离，装卸区的卷帘门要拉闸才开。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准：破坏清单与房间对应关系来自官方目标文案推断，没有中文图文可核对。",
+        "克雷斯双子会交替封锁门，带撬棍/干扰器能省掉绕路。",
+        "演播厅灯亮时视野最好但也最容易被看，蹲在摄像机后是安全的观察位。"
+      ],
+      "enemies": [
+        "Otto & Arora Kress 克雷斯双子（Prime Asset）",
+        "Ex-Pop 变异囚犯",
+        "电视台工作人员（杂兵）"
+      ],
+      "rewards": [
+        "经验与代币（按评级结算）",
+        "第六赛季目录印章",
+        "电视台地图的 MK 挑战"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1827626365765752"
+      ],
+      "mapEn": "Television Studio"
+    },
+    {
+      "id": "locksock-the-warden",
+      "nameEn": "Locksock the Warden",
+      "nameZh": "锁死典狱长",
+      "aliases": [
+        "监狱农场",
+        "典狱长",
+        "第七赛季新关",
+        "Project Boneyard"
+      ],
+      "kind": "trial",
+      "map": "监狱农场",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 30,
+      "confidence": "medium",
+      "summary": "Season 7「Project Boneyard」（2026-07-14）加的新试炼，官方目标原话是「杀掉典狱长，我们就放你出去」，老对手电击小子库伊尔回归当 BOSS。新杂兵「咬人者」（The Biter）也在这张图和两个新 MK 里出现。",
+      "objectives": [
+        "在监狱农场里推进流程，最终目标：杀掉典狱长（Kill the Warden）",
+        "对抗回归的库伊尔（Leland Coyle）与新杂兵咬人者",
+        "完成目标后撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：进图先跑标准难度记路——从起始区沿主路确认撤离点、武器箱和钥匙卡的位置，本关主目标只有一个：杀掉典狱长（Kill the Warden）。",
+        "步骤 2：咬人者（The Biter）是本赛季新增的 Ex-Pop，前强制劳工囚犯，会贴脸咬人并造成持续掉血；遇到它不要原地绕圈，先直线拉开距离再回头处理。",
+        "步骤 3：库伊尔（Leland Coyle）回归并带大范围电击攻击，窄走廊遭遇一定先退回有岔路的地方，别在他面前躲柜子或桶——他会守在门口。",
+        "步骤 4：拿到武器与道具后在目标区域处理典狱长，目标完成后按撤离点撤出；血库活动（Blood Drive）期间可以在献血机捐血换样本，代价是本局最大血量永久下降。"
+      ],
+      "tips": [
+        "新图不熟就别急着打高难度，先把撤离路线、武器箱和 BOSS 刷新点摸清。",
+        "带团队治疗或眩晕装具，咬人者贴脸时眩晕能救命。",
+        "社区整理，以游戏内为准：官方公告只给出目标描述，没有公开分阶段步骤。"
+      ],
+      "enemies": [
+        "Leland Coyle 电击小子（库伊尔，BOSS）",
+        "The Biter 咬人者（新杂兵）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "经验与代币（按评级结算）",
+        "Season 7 相关奖励与收集物"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1837955055366413",
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "The Prison Farm",
+      "program": "第七赛季 · Project Boneyard（坟场计划）"
+    },
+    {
+      "id": "release-the-reagents",
+      "nameEn": "Release the Reagents",
+      "nameZh": "受试者释放",
+      "aliases": [
+        "豪宅",
+        "豪宅关",
+        "蓝票关",
+        "单人终局"
+      ],
+      "kind": "trial",
+      "map": "豪宅",
+      "difficulty": "高",
+      "players": "1",
+      "durationMin": 30,
+      "confidence": "high",
+      "summary": "打完计划X、集齐 10 张蓝票后解锁的单人终局关，相当于序章的困难版。回程会有 BOSS 拦路，死了前功尽弃。",
+      "objectives": [
+        "把私人文件与公共文件放回序章取文件的那些位置",
+        "下楼去花园找钥匙",
+        "回来开门",
+        "找三个调频器调频，并找胶片",
+        "把胶片运到剧院换掉",
+        "离开豪宅"
+      ],
+      "walkthrough": [
+        "进门先把私人文件和公共文件按序章的位置放回去，别乱丢。",
+        "然后下楼去花园找钥匙，花园里视野差、怪多，蹲走。",
+        "拿到钥匙回来开门，进入下一区域。",
+        "找三个调频器依次调频，同时把胶片找齐。",
+        "把胶片运到剧院换掉，这一步搬运距离长，路上会遇敌。",
+        "最后离开豪宅，原路返回时会有 BOSS 拦路，这段是全关最容易翻车的地方。"
+      ],
+      "tips": [
+        "单人关，没有队友救你，别贪资源。",
+        "回程 BOSS 段先把装具充能留满再走，别在前面浪费。",
+        "死了前功尽弃，所以回程宁可慢也别跑直线。"
+      ],
+      "enemies": [
+        "回程拦路的 BOSS（豪宅关专属）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "紫色/蓝色票据类奖励与计划X重置",
+        "计划X的评价与其它进度保留"
+      ],
+      "sources": [
+        "https://3g.ali213.net/gl/html/1073231.html"
+      ],
+      "mapEn": "Mansion",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "escape-the-courthouse",
+      "nameEn": "Escape the Courthouse",
+      "nameZh": "逃出法院",
+      "aliases": [
+        "法院逃脱"
+      ],
+      "kind": "mk-challenge",
+      "map": "法院",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 10,
+      "confidence": "low",
+      "summary": "法院图的逃脱类 MK，目标是完成目标后从法院撤出去。中文详细流程资料很少，只保留能确认的部分。",
+      "objectives": [
+        "进法院后确认主出口被法警封死",
+        "在证物室/法警室拿到门禁卡",
+        "避开走廊巡逻的库伊尔，找到通往地下车库的楼梯",
+        "从地下车库出口撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：进图先走一圈确认出口——法院正门被铁闸封死，目标栏会把第一张门禁卡标在法警室。",
+        "步骤 2：法警室在二楼走廊尽头，桌子抽屉里有门禁卡；走廊是库伊尔的主巡逻线，听到电击棍的电流声就先躲进审判庭侧门。",
+        "步骤 3：拿卡后去证物室刷开铁门，里面还有第二张卡和一份文件，文件是可选收集物，能多拿评级分。",
+        "步骤 4：地下车库的楼梯在证物室后方，下去前先扔瓶子把守楼梯的杂兵引开，车库里走车与柱之间，最后从卷帘门爬出去撤离。"
+      ],
+      "tips": [
+        "法院走廊长、没有掩体，移动全靠蹲走贴墙，跑起来就等于喊人。",
+        "X 光装具在这张图收益最大，能隔墙看到走廊另一头的库伊尔。",
+        "以下步骤为社区复盘整理，具体位置与数量以游戏内为准。"
+      ],
+      "enemies": [
+        "Leland Coyle 电击小子（库伊尔，BOSS）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "Courthouse",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "destroy-the-evidence",
+      "nameEn": "Destroy the Evidence",
+      "nameZh": "销毁证据",
+      "aliases": [
+        "法院销毁证据"
+      ],
+      "kind": "mk-challenge",
+      "map": "法院",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 10,
+      "confidence": "low",
+      "summary": "法院图的销毁类 MK，需要把地图里的证据处理掉。具体数量和位置资料不足。",
+      "objectives": [
+        "在法院找到需要销毁的证据（档案区与证物室）",
+        "把证据搬到酸液桶里溶掉",
+        "搬运途中避开库伊尔",
+        "全部销毁后撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：证据分两处——证物室的铁柜和二楼档案区的纸箱，先用开锁器开证物室门，目标栏会显示剩余件数。",
+        "步骤 2：把证据抱到一楼的酸液桶（桶上有腐蚀警告标），每次只能抱一件，抱着不能跑也不能攻击。",
+        "步骤 3：搬运路线走内侧楼梯，别走正门大厅；库伊尔在大厅来回走，听到他的笑声就先退回档案区。",
+        "步骤 4：全部溶完后撤离点在法院侧门，出门前确认走廊没人再走。"
+      ],
+      "tips": [
+        "抱着证据被追就先把证据放下再躲，放下后它不会消失。",
+        "酸液桶边上有拖车，可以把桶推开改变巡逻辑。",
+        "以下步骤为社区复盘整理，具体位置与数量以游戏内为准。"
+      ],
+      "enemies": [
+        "Leland Coyle 电击小子（库伊尔，BOSS）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "Courthouse",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "tilt-the-scales-of-justice",
+      "nameEn": "Tilt the Scales of Justice",
+      "nameZh": "让正义的天平倾斜",
+      "aliases": [
+        "法院MK",
+        "天平"
+      ],
+      "kind": "mk-challenge",
+      "map": "法院",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 12,
+      "confidence": "low",
+      "summary": "法院的 MK 挑战，中文玩家普遍叫「让正义的天平倾斜」，噩梦难度有 A+ 一命速通记录。英文名未完全确认，按中文社区叫法收录。",
+      "objectives": [
+        "在法院法庭大厅启动天平机关",
+        "按陪审团/证据提示把配重搬到天平两侧",
+        "配平后完成宣判环节",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：天平机关在法庭大厅正中央的审判台上，先互动读取当前倾斜方向和需要的配重数量。",
+        "步骤 2：配重块散在陪审席、证物架和法官席后方，一次搬一块，搬的时候楼上的旁听席会有杂兵往下看，先清掉。",
+        "步骤 3：搬够数量后回审判台按提示放上，放错边天平会倾向另一方并报警刷怪，重放一次即可。",
+        "步骤 4：配平后触发宣判演出，演出结束撤离点开在法院前廊，库伊尔会从侧门冲进来，直接从正门跑。"
+      ],
+      "tips": [
+        "这张图（噩梦难度）敌人密度明显上升，撤离路线要提前踩好。",
+        "别在法庭大厅中央停，那里完全没有掩体。",
+        "以下步骤为社区复盘整理，具体位置与数量以游戏内为准。"
+      ],
+      "enemies": [
+        "Leland Coyle 电击小子（库伊尔，BOSS）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://www.bilibili.com/video/BV1VjMw6UEar/",
+        "https://www.bilibili.com/opus/971528049103208453"
+      ],
+      "mapEn": "Courthouse",
+      "program": "基础计划（1.0）"
+    },
+    {
+      "id": "bribe-the-judges",
+      "nameEn": "Bribe the Judges",
+      "nameZh": "贿赂法官",
+      "aliases": [
+        "第七赛季法院MK",
+        "贿赂"
+      ],
+      "kind": "mk-challenge",
+      "map": "监狱农场",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 12,
+      "confidence": "medium",
+      "summary": "Season 7「Project Boneyard」新增的两个 MK 之一，官方描述是「收集贿赂，付给法官」。新杂兵咬人者（The Biter）会在这两个 MK 里出现。",
+      "objectives": [
+        "收集地图里的贿赂（bribes）",
+        "把贿赂交给法官",
+        "撤离"
+      ],
+      "walkthrough": [
+        "官方只给了目标描述，没有公开的完整步骤；地图归属也有两种说法（法院 / 监狱农场新区域），以游戏内为准。",
+        "收集类目标通常分散在整张图，按区域分工最快。",
+        "咬人者会贴脸，别原地躲，拉开距离再绕。"
+      ],
+      "tips": [
+        "新 MK 建议先打标准难度记位置，再上高强度。",
+        "带眩晕装具应付咬人者。",
+        "社区整理，以游戏内为准：官方公告只给出目标描述，没有公开分阶段步骤。"
+      ],
+      "enemies": [
+        "The Biter 咬人者（新杂兵）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "Season 7 活动/通行证相关奖励",
+        "代币与经验"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1837955055366413",
+        "https://www.xiaohongshu.com/discovery/item/6a57d7ae0000000021009988"
+      ],
+      "mapEn": "The Prison Farm",
+      "program": "第七赛季 · Project Boneyard（坟场计划）"
+    },
+    {
+      "id": "cancel-the-broadcast",
+      "nameEn": "Cancel the Broadcast",
+      "nameZh": "中断广播",
+      "aliases": [
+        "取消广播",
+        "第七赛季MK"
+      ],
+      "kind": "mk-challenge",
+      "map": "监狱农场",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 12,
+      "confidence": "medium",
+      "summary": "Season 7 的另一个新 MK，官方描述是「破坏广播，用血亵渎信徒」。新杂兵咬人者会在这关出现。",
+      "objectives": [
+        "找到并破坏广播设备",
+        "用血完成亵渎/献祭步骤",
+        "撤离"
+      ],
+      "walkthrough": [
+        "官方只给了目标描述，完整步骤未公开。",
+        "破坏广播一般是站桩交互，先清掉周围的怪。",
+        "「用血亵渎」这类步骤通常要拿血袋/容器去指定位置，路上会遇敌。"
+      ],
+      "tips": [
+        "和「贿赂法官」同批上线，可以一起练。",
+        "搬运/交互环节最怕被打断，队友要卡门口。",
+        "社区整理，以游戏内为准：官方公告只给出目标描述，没有公开分阶段步骤。"
+      ],
+      "enemies": [
+        "The Biter 咬人者（新杂兵）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "Season 7 活动/通行证相关奖励",
+        "代币与经验"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1837955055366413",
+        "https://www.ginx.tv/en/all-programs-trials-in-the-game"
+      ],
+      "mapEn": "The Prison Farm",
+      "program": "第七赛季 · Project Boneyard（坟场计划）"
+    },
+    {
+      "id": "investigate-the-minotaur",
+      "nameEn": "Investigate the Minotaur",
+      "nameZh": "调查牛头怪",
+      "aliases": [
+        "牛头怪",
+        "保险丝关"
+      ],
+      "kind": "mk-challenge",
+      "map": "",
+      "difficulty": "高",
+      "players": "1-4",
+      "durationMin": 12,
+      "confidence": "low",
+      "summary": "带保险丝机制的 MK：开局先拿保险丝，最后插上就能开门，熟练之后只需要插最后一道门。英文名按玩家叫法，未完全确认。",
+      "objectives": [
+        "开局拿到保险丝",
+        "穿过大厅/双人门区域",
+        "把保险丝插到最后的门上",
+        "撤离"
+      ],
+      "walkthrough": [
+        "先拿保险丝，走左边小门不能卡位，只能卡大门。",
+        "卡大门同样是对准黑色缆线，45 度角斜放再拿进去。",
+        "后排位置有一个双人门，有「爆破大师」可以直接撞开，没有的话叫队友一起撞。",
+        "过去之后走夜魔所在的位置，大厅大门卡一下：对着黑色缆线 45 度角斜放蹲着，拿起来平移出去。",
+        "遇到有高地下楼的场景，先把箱子放在楼梯口停一下，慢慢一步步移，直到出现交互键，把箱子抓过来放到门口台阶上，它会自动挪到中间，再一步步移直到能抱起箱子，就卡成了。",
+        "最后那边是小门卡不了，只有那一块需要插保险丝，熟练之后开局拿保险丝、只插最后这一个门就行。"
+      ],
+      "tips": [
+        "夜魔（怕光的那个）区域别开灯硬冲，用光把它逼走再走。",
+        "双人门没爆破大师就队友一起撞。",
+        "开局拿保险丝 + 只插最后一道门 = 最少交互。",
+        "社区整理，以游戏内为准：地图归属与目标细节均无可靠来源。"
+      ],
+      "enemies": [
+        "夜魔（怕光的敌人）",
+        "Ex-Pop 变异囚犯（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://www.biubiu001.com/news/236026.html"
+      ],
+      "program": "基础计划（1.0）"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "reunite-the-family",
+      "nameZh": "让家庭团聚",
+      "nameEn": "Reunite the Family",
+      "aliases": [
+        "家庭团聚",
+        "孤儿院MK"
+      ],
+      "map": "孤儿院",
+      "difficulty": "中",
+      "program": "第二赛季 · Project Breach（缺口计划）",
+      "durationMin": 10,
+      "confidence": "medium",
+      "summary": "第二赛季新增 MK，官方文案：「核心家庭是社会理想。让孤儿摆脱国家的桎梏，让他与父母团聚。」中文名与目标文案均来自游侠转述的官方说明。",
+      "objectives": [
+        "在孤儿院找到被 Mu​rkoff 收走的孩子",
+        "把孩子送到父母所在的房间",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：进图后在主楼一层教室区逐个开门找孩子——孩子一般在教室角落或被锁的储物间，需要先拿开锁器。",
+        "步骤 2：抱/牵着孩子移动时不能冲刺，走楼梯时优先走外侧楼梯，内侧楼梯台阶窄容易被堵。",
+        "步骤 3：父母房间在二层尽头（门口有全家福），放下去会触发一段过场，之后目标栏出现撤离点。",
+        "步骤 4：撤离前先把走廊的敌人引开：扔瓶子到反方向，等巡逻走远再走。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准。",
+        "带着孩子被追时先躲柜子再等人走，孩子在怀里不影响躲藏。"
+      ],
+      "enemies": [
+        "Mother Gooseberry 鹅莓妈妈（BOSS）",
+        "Ex-Pop 变异囚犯"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2024-12/890351.html",
+        "https://gl.ali213.net/html/2023-5/1073231.html"
+      ],
+      "mapEn": "Orphanage"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "deface-the-futtermans",
+      "nameZh": "损毁富特曼家族",
+      "nameEn": "Deface the Futtermans",
+      "aliases": [
+        "富特曼",
+        "福特曼父女",
+        "玩具工厂MK"
+      ],
+      "map": "玩具工厂",
+      "difficulty": "中",
+      "program": "第二赛季 · Project Breach（缺口计划）",
+      "durationMin": 10,
+      "confidence": "medium",
+      "summary": "第二赛季新增 MK，官方文案：「童年记忆是阻碍你成长的停滞。抛弃那些让你头脑混乱的幼稚事物。」中文名来自游侠转述（又译「损毁福特曼父女」）。",
+      "objectives": [
+        "在玩具工厂找到富特曼家族的人偶与画像",
+        "逐个涂污/砸毁",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：进厂后先去展厅（进门左手边），那里摆着富特曼一家的人偶，目标栏会标出第一件。",
+        "步骤 2：砸毁是长按互动，砸的时候出大声，先确认车间巡逻的重装敌人不在同一层。",
+        "步骤 3：第二、三件在二楼办公室和传送带尽头的仓库，走传送带上方的检修梯比走正门快。",
+        "步骤 4：全部砸完撤离点开在装卸区，卷帘门要拉闸。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准。",
+        "砸完一件立刻换层，鹅莓妈妈会被声音引过来。"
+      ],
+      "enemies": [
+        "Mother Gooseberry 鹅莓妈妈（BOSS）",
+        "玩具工厂重装敌人（剁肉刀）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2024-12/890351.html"
+      ],
+      "mapEn": "Toy Factory"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "cast-the-vote",
+      "nameZh": "投票突围",
+      "nameEn": "",
+      "aliases": [
+        "投票",
+        "购物中心MK"
+      ],
+      "map": "购物中心",
+      "difficulty": "中",
+      "program": "第四赛季 · 双王计划",
+      "durationMin": 10,
+      "confidence": "low",
+      "summary": "第四赛季（2025-07-15，双王计划）随购物中心地图上线的 MK 挑战之一，中文名为游侠转述的官方名，英文名未核实。",
+      "objectives": [
+        "在购物中心找到投票箱与选票",
+        "把票投进指定投票箱（或换掉箱内选票）",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：进图后沿主中庭的游行横幅往深处走，投票箱设在中庭的展台上，先记位置再去拿选票。",
+        "步骤 2：选票散在两侧店铺的收银台和仓库，蹲着搜柜台，别碰广场中央——那里没有掩体。",
+        "步骤 3：投满指定票数后目标栏才会给撤离点，撤离点一般开在商场后门的卸货通道。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准：本条的箱体/票数细节没有中文图文可核对。",
+        "克雷斯双子会封锁中庭，听到广播声先躲进店铺。"
+      ],
+      "enemies": [
+        "Otto & Arora Kress 克雷斯双子",
+        "Ex-Pop 变异囚犯"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2025-7/945521.html"
+      ],
+      "mapEn": "Shopping Mall"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "judge-the-accused",
+      "nameZh": "审判被告",
+      "nameEn": "",
+      "aliases": [
+        "对被告做出判决",
+        "被告",
+        "购物中心MK"
+      ],
+      "map": "购物中心",
+      "difficulty": "中",
+      "program": "第四赛季 · 双王计划",
+      "durationMin": 10,
+      "confidence": "low",
+      "summary": "第四赛季随购物中心上线的 MK 挑战之一，中文名为游侠转述的官方名（社区也写作「对被告做出判决」），英文名未核实。",
+      "objectives": [
+        "在购物中心找到审判台与被告",
+        "按名单把被告送上审判台",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：审判台设在中庭的临时舞台上，先看台上名单，记下需要押送的被告。",
+        "步骤 2：被告被关在两侧店铺的铁笼里，开笼要先去保安室拿钥匙串。",
+        "步骤 3：押送时不能跑，路上会被追，先把追兵用瓶子引到反方向再走。",
+        "步骤 4：名单清空后从卸货通道撤离。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准。",
+        "押送路线走店铺内走廊，别走中庭开阔地。"
+      ],
+      "enemies": [
+        "Otto & Arora Kress 克雷斯双子",
+        "Ex-Pop 变异囚犯"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2025-7/945521.html"
+      ],
+      "mapEn": "Shopping Mall"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "trafficking-the-goods",
+      "nameZh": "贩运产物",
+      "nameEn": "",
+      "aliases": [
+        "贩运货物",
+        "贩毒",
+        "市中心MK",
+        "贩运产物",
+        "Trafficking the Goods"
+      ],
+      "map": "市中心",
+      "difficulty": "中",
+      "program": "4.1 · 深度燃烧（Deep Burn）",
+      "durationMin": 12,
+      "confidence": "medium",
+      "summary": "4.1 赛季「深度燃烧」随更新加入的 MK，官方中文说明：侵入 Franco Barbi 的领地，向街头倾销 Murkoff 研发的新型实验类阿片药物。中文名与目标均来自游侠官方说明转述。",
+      "objectives": [
+        "进入 Franco Barbi 的市中心领地，找到药库",
+        "把新型阿片装箱",
+        "推到街角的交货点倾销",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：从街区入口进，沿主街走到有 Barbi 手下站岗的仓库，侧门进去就是药库（架上全是绿色药瓶）。",
+        "步骤 2：装药是长按互动，一次只能抱一箱，抱着不能跑也翻不了窗，路上必须避开巡逻。",
+        "步骤 3：交货点在街角电话亭旁，把箱子放上传送带再拉闸，才能开始下一趟。",
+        "步骤 4：全部送完撤离点开在仓库后巷；深燃活动期间地面还有火焰陷阱，踩到直接掉一格。"
+      ],
+      "tips": [
+        "抱箱子时被追就丢下箱子躲柜子，箱子会留在原地，回头再捡。",
+        "深度燃烧活动期间投手会频刷，走有顶棚的路。",
+        "英文名未能核实，aliases 里的英文为社区叫法。"
+      ],
+      "enemies": [
+        "Franco \"Il Bambino\" Barbi（BOSS）",
+        "The Pitcher 投手",
+        "Ex-Pop 变异囚犯"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）",
+        "深度燃烧活动代币（活动期间）"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2025-9/960331.html"
+      ],
+      "mapEn": "Downtown"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "disrupt-the-community",
+      "nameZh": "瓦解社区",
+      "nameEn": "",
+      "aliases": [
+        "扰乱社区",
+        "拆围栏",
+        "郊区MK"
+      ],
+      "map": "郊区",
+      "difficulty": "中",
+      "program": "第三赛季 · 复发计划",
+      "durationMin": 12,
+      "confidence": "medium",
+      "summary": "4.1 赛季加入的 MK，官方中文说明：打破人际壁垒——字面意义上地拆毁围栏，鼓励外界入侵。中文名与目标来自游侠官方说明转述，英文名未核实。",
+      "objectives": [
+        "在郊区找到需要拆除的围栏",
+        "用工具/车辆把围栏拆毁",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：进图后沿主路走，围栏把社区分成几块，目标栏会标出第一段要拆的围栏。",
+        "步骤 2：拆围栏要先用撬棍/锤子起钉子，起完再推倒；起钉子时动静大，先清掉附近的杂兵。",
+        "步骤 3：有一段围栏要用叉车顶，叉车钥匙在门卫室；开车时不能攻击，撞到敌人也能推开。",
+        "步骤 4：全部拆完后撤离点开在社区正门，猎兵（The Hunter）会在最后一段追你。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准。",
+        "猎兵会远程瞄准，拆围栏时别站在路灯下。"
+      ],
+      "enemies": [
+        "The Hunter 猎兵",
+        "Ex-Pop 变异囚犯"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）",
+        "深度燃烧活动代币（活动期间）"
+      ],
+      "sources": [
+        "https://www.ali213.net/news/html/2025-9/960331.html"
+      ],
+      "mapEn": "Suburbs"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "compel-the-children",
+      "nameZh": "劝诱孩童",
+      "nameEn": "Compel the Children",
+      "aliases": [
+        "蛊惑孩童",
+        "护送神父",
+        "Geister MK"
+      ],
+      "map": "孤儿院",
+      "difficulty": "高",
+      "program": "7.2 · 盖斯特计划（Program Geister）",
+      "durationMin": 12,
+      "confidence": "high",
+      "summary": "7.2（2026-10-20）盖斯特计划第一阶段的 MK。官方文案「为孩子们祈祷」，实际是孤儿院护送任务：把神父从大门外一路护送到祭坛。中文名与流程均来自游侠 2026-10-21 的活动解析。",
+      "objectives": [
+        "在孤儿院大门外接应神父（起点是一排循环显示提示的电视屏幕）",
+        "护送神父穿过人偶孩童与修女教徒的房间",
+        "把神父送到祭坛",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：起点在孤儿院大门外，先看那一排电视屏幕的提示，确认「护送神父」；神父就在屏幕下方等你互动，互动后他会跟着你走。",
+        "步骤 2：先进祭坛厅——祭坛上原本就摆着一个穿修女服的教徒，周围是同步拍手的人偶孩童；不要在那里停留，拍手声会掩盖追兵脚步，先把守门的电动木偶引开。",
+        "步骤 3：路线要穿过一个「机械人偶孩童整齐同步起舞」的房间，猎杀者会从房顶突袭，进房间前先抬头看天花板缺口，贴墙蹲走、等他落地再冲。",
+        "步骤 4：神父送到祭坛后目标栏切换为撤离，返程别走原路，走侧廊绕开人偶房间。"
+      ],
+      "tips": [
+        "神父被攻击会停下，清掉追兵再前进，别一路狂奔把他甩在敌人堆里。",
+        "人偶孩童的拍手声是范围提示，声音突然变整齐说明附近有猎杀者在集合。",
+        "盖斯特计划有取器官样本的支线目标，顺手做能多拿奖励。"
+      ],
+      "enemies": [
+        "电动木偶（人偶孩童）",
+        "修女教徒（杂兵）",
+        "猎杀者（房顶突袭）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）",
+        "盖斯特计划活动代币与目录奖励"
+      ],
+      "sources": [
+        "https://gl.ali213.net/html/2026-10/1817999.html",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1846651706695405"
+      ],
+      "mapEn": "Orphanage"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "sanitize-the-factory",
+      "nameZh": "工厂净化",
+      "nameEn": "Sanitize the Factory",
+      "aliases": [
+        "给工厂消毒",
+        "酸液工厂",
+        "嘎嘎鸭玩具工厂"
+      ],
+      "map": "玩具工厂",
+      "difficulty": "高",
+      "program": "7.2 · 盖斯特计划（Program Geister）",
+      "durationMin": 12,
+      "confidence": "high",
+      "summary": "7.2 盖斯特计划第二阶段的 MK。场景是嘎嘎鸭玩具工厂的酸液处理：四个分区各有专属酸液保管箱，要把酸液搬运处理掉。中文名与流程来自游侠 2026-10-21 的活动解析。",
+      "objectives": [
+        "在停满卡车的庭院升起卷帘大门进入工厂",
+        "在 A–D 四个分区找到各自的酸液保管箱",
+        "把酸液搬到处理点",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：开局在停满卡车的庭院，先绕到侧面找卷帘门的控制箱，升起大门才能进车间——庭院里的卡车可以当掩体，别在正门广场停。",
+        "步骤 2：车间里传送带上摆的不是玩具而是一具具躯体，一名手持剁肉刀的重型敌人会在车间来回巡逻，等他走过再横穿传送带。",
+        "步骤 3：工厂分 A 到 D 四个分区，每个分区都有专属的酸液保管箱；抱起酸液不能跑，路线按 A→B→C→D 走，每送完一箱回处理点登记。",
+        "步骤 4：走廊里遍布肉状触须，追逐时会触发红色幻觉特效——出现幻觉就走直线不要回头，撞到触须会被减速。",
+        "步骤 5：四区清空后撤离点开在庭院，从车间后门出去比走正门近。"
+      ],
+      "tips": [
+        "红色幻觉期间画面会扭曲，方向感会乱，提前记好一条直线路线。",
+        "剁肉刀敌人移动慢但一刀重伤，绕传送带转圈比他快。",
+        "抱酸液时被追，先把箱子放下再躲，箱子不会消失。"
+      ],
+      "enemies": [
+        "玩具工厂重装敌人（剁肉刀）",
+        "电动木偶",
+        "肉状触须（环境危险）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）",
+        "盖斯特计划活动代币与目录奖励"
+      ],
+      "sources": [
+        "https://gl.ali213.net/html/2026-10/1817999.html",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1846651706695405"
+      ],
+      "mapEn": "Toy Factory"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "change-the-program",
+      "nameZh": "更换节目",
+      "nameEn": "Change the Program",
+      "aliases": [
+        "换节目",
+        "天线",
+        "电视台MK"
+      ],
+      "map": "电视台",
+      "difficulty": "中",
+      "program": "7.1 · 化学泄漏（Chemical Leak）",
+      "durationMin": 12,
+      "confidence": "high",
+      "summary": "7.1（2026-09-08）新增 MK，官方文案：「散播我们的真相，更换节目。」中文名已由 18183 的图文攻略核实，流程为天线调试 + 磁带转换。",
+      "objectives": [
+        "按天线旁监视器显示的位置，把 A / B 转发器搬到正确地点",
+        "转动转发器，让扬声器朝向监视器上箭头所指的方向",
+        "从天线旁的发射器取走新闻磁带，送到转换站（Converters）覆盖改写",
+        "四座天线全部调试完毕即通关"
+      ],
+      "walkthrough": [
+        "步骤 1：起点是天线 1，也就是教学区。先看天线旁监视器上显示的图案和字母（例如「A」），把写着 A 的转发器搬到图标指示的位置，再转动转盘，让扬声器朝向箭头指的方向——截图里是朝左就朝左。",
+        "步骤 2：摆对之后转发器上方会冒出电流，看到电流才算成功；接着从天线旁的发射器上把新闻磁带取走。",
+        "步骤 3：顺着机器嗡嗡的运转声找标着「转换器 / Converters」的门，进去把磁带放进转换站改写。改写一盘要 10 秒，并且会连响 3 次以上，敌人就在附近时先清场或让队友卡门。",
+        "步骤 4：下一片区还有三座天线，建议从最偏僻、最黑的天线 4 开始：把 A、B 两个转发器搬到监视器所示位置，被随机刷新的杂物挡住就先推开清场。先做天线 4 是因为它最远，摆好转发器后再用整片屋顶区域处理其余天线的障碍。",
+        "步骤 5：磁带和天线不绑定、全都通用，所以先把三座天线全部调好再统一取磁带；单人每座天线 1 盘，组队每座要 2 盘。四人组队时两人在楼下牵制克雷斯双子并转磁带，另外两人搬转发器。"
+      ],
+      "tips": [
+        "转换站改写磁带会持续发出声响，等于给敌人报点，改写前先确认走廊清空。",
+        "克雷斯双子（奥托与阿罗拉）是这关的 Prime Asset，双子会分头包抄，别两个人同时上屋顶。",
+        "杂物会随机刷新在转发器位置，搬运前先看一眼脚下，别把转发器卡进死角。"
+      ],
+      "enemies": [
+        "Otto & Arora Kress 克雷斯双子",
+        "Ex-Pop 变异囚犯"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）",
+        "化学泄漏活动代币（活动期间）"
+      ],
+      "sources": [
+        "https://news.18183.com/yxxw/202609/9028304.html",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1842846814455721"
+      ],
+      "mapEn": "Television Studio"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "fund-the-campaign",
+      "nameZh": "资助竞选",
+      "nameEn": "Fund the Campaign",
+      "aliases": [
+        "竞选资金",
+        "筹款",
+        "电视台MK"
+      ],
+      "map": "电视台",
+      "difficulty": "中",
+      "program": "7.1 · 化学泄漏（Chemical Leak）",
+      "durationMin": 12,
+      "confidence": "low",
+      "summary": "7.1 新增 MK，官方文案：「金钱是言论的未来。资助竞选吧。」中文名「资助竞选」为社区通译，英文名已由 Steam 公告核实；地图归属按政治宣传主题推断为电视台。",
+      "objectives": [
+        "在场景里收集竞选资金/捐款箱",
+        "把资金送到竞选总部登记",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：目标栏会列出需要收的捐款箱数量，箱子多摆在办公桌、保险柜和后台梳妆台上，保险柜要开锁器。",
+        "步骤 2：抱着钱箱不能跑，一次一箱；路线优先走内侧走廊，避开有摄像机灯光的演播厅。",
+        "步骤 3：送到竞选总部的登记台，放上去再按铃才算入账，凑够数后撤离点开启。",
+        "步骤 4：撤离前把门口的人引开，钱箱在手上时你没法攻击。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准：本关只有官方目标描述与中文名可核，具体地图与步骤未能单独证实。",
+        "钱箱在手上时不能攻击，撤离前先把追兵引开。"
+      ],
+      "enemies": [
+        "Otto & Arora Kress 克雷斯双子",
+        "Ex-Pop 变异囚犯"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）",
+        "化学泄漏活动代币（活动期间）"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1842846814455721",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1846651706695405"
+      ],
+      "mapEn": "Television Studio"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "solve-the-murder",
+      "nameZh": "查出谋杀",
+      "nameEn": "Solve the Murder",
+      "aliases": [
+        "解出谋杀案",
+        "凶案",
+        "电视台MK"
+      ],
+      "map": "电视台",
+      "difficulty": "中",
+      "program": "第六赛季 · Project Judas",
+      "durationMin": 12,
+      "confidence": "medium",
+      "summary": "第六赛季（2026-03-24）新增 MK，官方文案：「找到证据，给我们要的凶手定罪。」中文名「查出谋杀」为社区通译，英文名已由 Steam 公告核实。",
+      "objectives": [
+        "在电视台收集案件证据",
+        "把证据送到审判/播出环节定罪",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：目标栏会给出证据清单（凶器、录像带、证词），分别放在道具间、剪辑室和化妆间。",
+        "步骤 2：剪辑室的录像带要先在播放机上倒带才能取，倒带要等十几秒，期间门口会被堵，先把门关上。",
+        "步骤 3：证据凑齐后送到演播厅的证物台，摆好后会播放定罪片段，之后撤离点开启。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准。",
+        "证据在手上时不能攻击，遇到双子先躲再走。"
+      ],
+      "enemies": [
+        "Otto & Arora Kress 克雷斯双子"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1827626365765752"
+      ],
+      "mapEn": "Television Studio"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "redacted",
+      "nameZh": "［已删改］",
+      "nameEn": "[REDACTED]",
+      "aliases": [
+        "已删改",
+        "redacted",
+        "电视台隐藏MK"
+      ],
+      "map": "电视台",
+      "difficulty": "高",
+      "program": "第六赛季 · Project Judas",
+      "durationMin": 12,
+      "confidence": "low",
+      "summary": "第六赛季与「查出谋杀」同时加入的 MK，官方公告里整个条目被涂黑，只留一句「请忽略睡眠室终端上出现的非常规程序」。目标流程官方未公开，本条只保留可确认的部分。",
+      "objectives": [
+        "按终端/屏幕提示完成关卡内异常任务",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：进图后先看睡眠室终端的异常提示，它会给出本关的第一条指令，指令会随进度变化。",
+        "步骤 2：跟随屏幕提示的方位移动，遇到被涂黑的文字就回终端重新读取，不要按上一轮的指令走。",
+        "步骤 3：目标清空后按常规撤离流程从电视台装卸区离开。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准：官方从未公布这张图的目标细节，本条步骤只能算框架。",
+        "把这条当探索关，路线以实际屏幕提示为准。"
+      ],
+      "enemies": [
+        "Otto & Arora Kress 克雷斯双子",
+        "未知异常单位"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1827626365765752"
+      ],
+      "mapEn": "Television Studio"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "fabricate-the-scandal",
+      "nameZh": "捏造丑闻",
+      "nameEn": "Fabricate the Scandal",
+      "aliases": [
+        "丑闻",
+        "造假",
+        "度假村MK"
+      ],
+      "map": "度假村",
+      "difficulty": "中",
+      "program": "第五赛季 · Project Messiah",
+      "durationMin": 12,
+      "confidence": "medium",
+      "summary": "第五赛季（2025-12-09）新增 MK，官方文案：「罪行不能只是被揭露，还得被编成能娱乐猪猡大众的样子。」中文名「捏造丑闻」为社区通译，英文名已由 Steam 公告核实。",
+      "objectives": [
+        "收集可用的「罪证」素材",
+        "把素材编造成丑闻并发布",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：素材散在度假村的客房与书房，目标栏会列出需要的份数，抽屉和保险柜要开锁器。",
+        "步骤 2：素材收齐后去出版社/记者席，把素材放进编排台并选择要捏造的罪名。",
+        "步骤 3：发布后全图会广播，敌人被吸引到编排室，趁这个空档从侧楼梯走。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准。",
+        "发布后别留在编排室，广播会把巡逻全引过来。"
+      ],
+      "enemies": [
+        "Liliya Bogomolova 修女",
+        "教团信徒"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1818118366185597"
+      ],
+      "mapEn": "The Resort"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "seize-the-narcotics",
+      "nameZh": "查获毒品",
+      "nameEn": "Seize the Narcotics",
+      "aliases": [
+        "毒品",
+        "缴获",
+        "度假村MK"
+      ],
+      "map": "度假村",
+      "difficulty": "中",
+      "program": "第五赛季 · Project Messiah",
+      "durationMin": 12,
+      "confidence": "medium",
+      "summary": "第五赛季新增 MK，官方文案：「找到毒品，解放你自己。」中文名「查获毒品」为社区通译，英文名已由 Steam 公告核实。",
+      "objectives": [
+        "在度假村找到藏毒点",
+        "把毒品整箱带走",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：藏毒点一般在酒窖和厨房冷库，目标栏会给出大概方位，冷库门要先去后厨拿门禁卡。",
+        "步骤 2：装毒是长按互动，一次一箱，抱着不能跑；酒窖到出口的走廊有巡逻，先用瓶子引开。",
+        "步骤 3：全部装箱后撤离点开在车库，走货运电梯比走主楼梯快。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准。",
+        "Liliya 会守在楼梯口，带 X 光确认再下楼。"
+      ],
+      "enemies": [
+        "Liliya Bogomolova 修女",
+        "教团信徒"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1818118366185597"
+      ],
+      "mapEn": "The Resort"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "flatten-the-foreman",
+      "nameZh": "夷平工头",
+      "nameEn": "Flatten the Foreman",
+      "aliases": [
+        "工头",
+        "福特曼",
+        "玩具工厂MK"
+      ],
+      "map": "玩具工厂",
+      "difficulty": "高",
+      "program": "常驻模式与限时活动计划",
+      "durationMin": 12,
+      "confidence": "medium",
+      "summary": "2026-02-10 Advent of Bogomolova 活动加入的 MK。官方说明：深入工厂时开启应急门会触发封锁，激怒鹅莓妈妈，把撤离变成限时赛跑。中文名「夷平工头」为社区通译，英文名已由 Steam 公告核实。",
+      "objectives": [
+        "深入玩具工厂，逐道开启应急门",
+        "在封锁触发后限时撤离（每次开门都会惊动鹅莓妈妈）",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：进厂后按目标栏提示找第一道应急门，门口有红色应急拉杆，拉开即触发封锁倒计时。",
+        "步骤 2：封锁期间全图门会落闸，只留一条路；倒计时开始后不要恋战，沿最近的安全通道跑。",
+        "步骤 3：每开一道门倒计时重置一次，最后一道门后是工头所在的车间，把他推倒/砸平才算完成。",
+        "步骤 4：完成瞬间鹅莓妈妈会进入狂暴，撤离点立刻开启，直接跑不要回头。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准。",
+        "开应急门前先记好两条退路，封锁会把其中一条关死。",
+        "带撬棍，被落闸挡路时能撬开侧门。"
+      ],
+      "enemies": [
+        "Mother Gooseberry 鹅莓妈妈（狂暴）",
+        "玩具工厂重装敌人"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）",
+        "Advent of Bogomolova 活动奖励"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1823825466508668"
+      ],
+      "mapEn": "Toy Factory"
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "eliminate-the-legacy",
+      "nameZh": "铲除祸根",
+      "nameEn": "Eliminate the Legacy",
+      "aliases": [
+        "消除遗产",
+        "配对符号"
+      ],
+      "map": "",
+      "difficulty": "中",
+      "program": "常驻模式与限时活动计划",
+      "durationMin": 10,
+      "confidence": "low",
+      "summary": "2026-02-10 活动加入的 MK，官方文案：「配对符号，铲除祸根。」符号配对玩法，具体地图未核实。",
+      "objectives": [
+        "找出场景里的符号标记并配对",
+        "按配对结果清除目标",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：目标栏给出符号清单，符号刻在墙面、家具和尸体上，先绕场一圈把所有符号位置记下来。",
+        "步骤 2：按符号把对应的机关/门禁解开，配对错误会触发警报刷怪。",
+        "步骤 3：配对完成后清除目标并从最近出口撤离。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准：地图归属与具体符号数量没有中文资料可核对。"
+      ],
+      "enemies": [
+        "Liliya Bogomolova 修女（活动期间）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1823825466508668"
+      ]
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "win-the-truth",
+      "nameZh": "赢得真相",
+      "nameEn": "Win the Truth",
+      "aliases": [
+        "真相",
+        "问答游戏",
+        "Prime Time MK"
+      ],
+      "map": "",
+      "difficulty": "中",
+      "program": "常驻模式与限时活动计划",
+      "durationMin": 10,
+      "confidence": "low",
+      "summary": "Prime Time（2026-05-19）活动加入的 MK，官方文案是一场只惩罚失败者的「问答/游戏」：「吐出那些让智者受苦的知识……赢下只惩罚败者的游戏。」地图未核实。",
+      "objectives": [
+        "在关卡里完成问答/游戏环节",
+        "赢下游戏并取得真相",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：进图后跟着舞台灯光走，问答环节的主持台是唯一亮灯处，按提示站上答题位。",
+        "步骤 2：每答一题场景会换一次布局，答错会被刷怪；答题时把退路先看好。",
+        "步骤 3：全部答对后取得真相物品，撤离点开启。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准：问答题目与判定细节没有中文资料可核对。",
+        "Prime Time 活动有「多个 Prime Asset 同场」的轮盘变体，听到不同怪声要同时防两边。"
+      ],
+      "enemies": [
+        "Prime Asset（活动轮盘随机）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）",
+        "Prime Time 活动奖励"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1832700592801092"
+      ]
+    },
+    {
+      "kind": "mk-challenge",
+      "players": "1-4",
+      "id": "incinerate-the-relic",
+      "nameZh": "焚毁圣物",
+      "nameEn": "Incinerate the Relic",
+      "aliases": [
+        "圣物",
+        "烧遗物",
+        "Prime Time MK"
+      ],
+      "map": "",
+      "difficulty": "中",
+      "program": "常驻模式与限时活动计划",
+      "durationMin": 10,
+      "confidence": "low",
+      "summary": "Prime Time（2026-05-19）活动加入的 MK，官方文案：「掏钱买进天堂，焚毁圣物。」地图未核实。",
+      "objectives": [
+        "找到圣物并用钱/贡品换取携带权",
+        "把圣物搬到焚化炉烧掉",
+        "撤离"
+      ],
+      "walkthrough": [
+        "步骤 1：先找捐献箱/收银台，把贡品投进去才允许拿走圣物（不投直接拿会触发警报）。",
+        "步骤 2：圣物很沉，抱着不能跑；路线走内侧走廊，避开有风琴/唱诗声的房间。",
+        "步骤 3：把圣物推进焚化炉、拉下闸门，烧完撤离点开启。"
+      ],
+      "tips": [
+        "社区整理，以游戏内为准。",
+        "焚化炉附近通常没有掩体，烧完立刻换房间再跑。"
+      ],
+      "enemies": [
+        "教团信徒（杂兵）"
+      ],
+      "rewards": [
+        "代币与经验（按评级结算）",
+        "Prime Time 活动奖励"
+      ],
+      "sources": [
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1304930&count=24&maxlength=0&feeds=steam_community_announcements#gid=1832700592801092"
+      ]
+    }
+  ]
+}

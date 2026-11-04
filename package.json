@@ -1,0 +1,62 @@
+{
+  "name": "dsh-plugin-outlast",
+  "version": "1.0.0",
+  "private": true,
+  "description": "《逃生：试炼》(The Outlast Trials) QQ 查询机器人插件：9 个中文工具，覆盖关卡图文攻略、敌人图鉴、道具/升级、核心机制与 Steam 实时资讯。",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NormalAorii/dsh-plugin-outlast.git"
+  },
+  "homepage": "https://github.com/NormalAorii/dsh-plugin-outlast#readme",
+  "bugs": {
+    "url": "https://github.com/NormalAorii/dsh-plugin-outlast/issues"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "icon": "icon.svg",
+  "files": [
+    "index.js",
+    "lib",
+    "data",
+    "locale",
+    "scripts",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "outlast",
+    "the-outlast-trials",
+    "qq-bot",
+    "game-guide",
+    "zh"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "^0.2.0-rc.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "verify": "node scripts/verify.js"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}

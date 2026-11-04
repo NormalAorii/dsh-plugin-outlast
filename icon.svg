@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Outlast Trials assistant">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1b1f"/>
+      <stop offset="1" stop-color="#070708"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c6cbd3"/>
+      <stop offset="1" stop-color="#6f757e"/>
+    </linearGradient>
+    <radialGradient id="iris" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#ff5a5f"/>
+      <stop offset="0.55" stop-color="#c1121f"/>
+      <stop offset="1" stop-color="#5c0710"/>
+    </radialGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="url(#bg)" stroke="#2c2e34" stroke-width="2"/>
+  <path d="M22 70 L64 46 L106 70 L64 94 Z" fill="none" stroke="#393c43" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="64" cy="70" r="20" fill="url(#iris)"/>
+  <circle cx="64" cy="70" r="9" fill="#0a0a0c"/>
+  <circle cx="57" cy="62" r="4.5" fill="#ffffff" opacity="0.55"/>
+  <!-- needle cross -->
+  <rect x="86" y="18" width="6" height="34" rx="2" fill="url(#metal)" transform="rotate(32 89 35)"/>
+  <path d="M104 12 L118 26 L110 34 L100 24 Z" fill="#c1121f" opacity="0.9"/>
+  <path d="M12 108 H44" stroke="#c1121f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M50 108 H74" stroke="#6f757e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M80 108 H116" stroke="#3a3d44" stroke-width="4" stroke-linecap="round"/>
+</svg>
